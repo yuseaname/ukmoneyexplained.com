@@ -15,6 +15,13 @@ PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 cd "$PROJECT_ROOT"
 
+for cmd in hugo rsync ssh; do
+    if ! command -v "$cmd" >/dev/null 2>&1; then
+        echo "ERROR: Required command not found: $cmd"
+        exit 1
+    fi
+done
+
 # Load environment variables
 ENV_FILE="$PROJECT_ROOT/.env"
 if [ ! -f "$ENV_FILE" ]; then
@@ -27,7 +34,7 @@ source "$ENV_FILE"
 set +a
 
 # Validate required vars
-for var in DEPLOY_HOST DEPLOY_USER DEPLOY_PATH; do
+for var in SITE_DOMAIN DEPLOY_HOST DEPLOY_USER DEPLOY_PATH; do
     if [ -z "${!var:-}" ]; then
         echo "ERROR: $var not set in .env"
         exit 1
@@ -35,6 +42,7 @@ for var in DEPLOY_HOST DEPLOY_USER DEPLOY_PATH; do
 done
 
 DEPLOY_PORT="${DEPLOY_PORT:-22}"
+SSH_OPTS=( -p "$DEPLOY_PORT" -o StrictHostKeyChecking=accept-new )
 
 echo "============================================"
 echo " Deploying UK Money Explained"
@@ -48,14 +56,18 @@ bash "$SCRIPT_DIR/build.sh"
 
 # Step 2: Deploy
 echo ""
+echo "--- Ensuring remote path exists ---"
+ssh "${SSH_OPTS[@]}" "$DEPLOY_USER@$DEPLOY_HOST" "mkdir -p '$DEPLOY_PATH'"
+
+echo ""
 echo "--- Deploying via rsync ---"
 rsync -avz --delete \
-    -e "ssh -p $DEPLOY_PORT -o StrictHostKeyChecking=accept-new" \
+    -e "ssh ${SSH_OPTS[*]}" \
     public/ \
     "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/"
 
 echo ""
 echo "============================================"
 echo " Deploy complete!"
-echo " Site: https://ukmoneyexplained.com"
+echo " Site: https://$SITE_DOMAIN"
 echo "============================================"
