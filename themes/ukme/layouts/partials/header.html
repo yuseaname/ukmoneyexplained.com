@@ -1,0 +1,30 @@
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="site-logo" aria-label="Home">
+      <strong>UK Money Explained</strong>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav-list">
+        {{ range site.Menus.main }}
+        <li><a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  if(btn && menu){
+    btn.addEventListener('click', function(){
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('open');
+    });
+  }
+})();
+</script>

@@ -1,0 +1,95 @@
+baseURL = 'https://ukmoneyexplained.com/'
+languageCode = 'en-gb'
+title = 'UK Money Explained'
+theme = 'ukme'
+
+[params]
+  tagline = "Simple explanations of money, bills, taxes, and finance in the UK."
+  description = "Clear, jargon-free explanations of UK finance topics — credit scores, mortgages, taxes, bills, and more."
+  author = "UK Money Explained"
+  disclaimer = "This is for informational purposes only and does not constitute financial advice. Consult a qualified financial adviser for personal advice."
+  adsense_enabled = false
+  adsense_client = ""
+  adsense_slot_below_title = ""
+  adsense_slot_after_intro = ""
+  adsense_slot_mid_article = ""
+  adsense_slot_end_article = ""
+  adsense_slot_sidebar = ""
+  google_analytics = ""
+  og_image = "/images/og-default.png"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks]
+  [permalinks.page]
+    credit = '/:filename/'
+    debt = '/:filename/'
+    loans = '/:filename/'
+    mortgages = '/:filename/'
+    taxes = '/:filename/'
+    bills = '/:filename/'
+    tools = '/:filename/'
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[outputFormats]
+  [outputFormats.robots]
+    baseName = "robots"
+    isPlainText = true
+    mediaType = "text/plain"
+
+[outputs]
+  home = ["HTML", "RSS", "robots"]
+
+[menus]
+  [[menus.main]]
+    name = "Credit & Debt"
+    url = "/credit/"
+    weight = 10
+  [[menus.main]]
+    name = "Loans"
+    url = "/loans/"
+    weight = 20
+  [[menus.main]]
+    name = "Mortgages"
+    url = "/mortgages/"
+    weight = 30
+  [[menus.main]]
+    name = "Taxes"
+    url = "/taxes/"
+    weight = 40
+  [[menus.main]]
+    name = "Bills"
+    url = "/bills/"
+    weight = 50
+  [[menus.main]]
+    name = "Tools"
+    url = "/tools/"
+    weight = 60
+
+  [[menus.footer]]
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menus.footer]]
+    name = "Editorial Policy"
+    url = "/editorial-policy/"
+    weight = 20
+  [[menus.footer]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 30

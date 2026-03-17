@@ -1,0 +1,16 @@
+<aside class="sidebar">
+  {{ partial "ad-unit.html" (dict "position" "sidebar") }}
+
+  {{ if .IsPage }}
+  <div class="sidebar-related">
+    <h3>Related Articles</h3>
+    <ul>
+      {{ $current := . }}
+      {{ $related := where (where site.RegularPages "Section" .Section) ".Permalink" "ne" .Permalink | first 5 }}
+      {{ range $related }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</aside>

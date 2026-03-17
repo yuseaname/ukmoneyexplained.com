@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="container list-page">
+  <header class="section-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="section-description">{{ . }}</div>
+    {{ end }}
+  </header>
+
+  <div class="article-grid">
+    {{ range .Pages }}
+    <article class="article-card">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ with .Description }}
+      <p>{{ . }}</p>
+      {{ else }}
+      <p>{{ .Summary | truncate 160 }}</p>
+      {{ end }}
+      <div class="card-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+        <span>{{ math.Round (div (countwords .Content) 200.0) }} min read</span>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

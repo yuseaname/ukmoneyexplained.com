@@ -1,0 +1,57 @@
+{{- $content := .Content -}}
+{{- $faqItems := slice -}}
+{{- /* Extract FAQ items from h3 headings within the FAQ section */ -}}
+{{- $inFAQ := false -}}
+{{- $lines := split $content "\n" -}}
+{{- $currentQ := "" -}}
+{{- $currentA := "" -}}
+{{- range $lines -}}
+  {{- if in . "<h2" -}}
+    {{- if and $inFAQ (ne $currentQ "") -}}
+      {{- $faqItems = $faqItems | append (dict "q" $currentQ "a" (trim $currentA "\n ")) -}}
+      {{- $currentQ = "" -}}
+      {{- $currentA = "" -}}
+    {{- end -}}
+    {{- if in . "Frequently Asked Questions" -}}
+      {{- $inFAQ = true -}}
+    {{- else -}}
+      {{- $inFAQ = false -}}
+    {{- end -}}
+  {{- else if and $inFAQ (in . "<h3") -}}
+    {{- if ne $currentQ "" -}}
+      {{- $faqItems = $faqItems | append (dict "q" $currentQ "a" (trim $currentA "\n ")) -}}
+      {{- $currentA = "" -}}
+    {{- end -}}
+    {{- $currentQ = . | replaceRE "<[^>]+>" "" | replaceRE "^\\s+|\\s+$" "" -}}
+  {{- else if and $inFAQ (ne $currentQ "") -}}
+    {{- $line := . | replaceRE "<[^>]+>" "" | replaceRE "^\\s+|\\s+$" "" -}}
+    {{- if ne $line "" -}}
+      {{- $currentA = printf "%s %s" $currentA $line -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if and $inFAQ (ne $currentQ "") -}}
+  {{- $faqItems = $faqItems | append (dict "q" $currentQ "a" (trim $currentA "\n ")) -}}
+{{- end -}}
+
+{{- if gt (len $faqItems) 0 -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $faq := $faqItems -}}
+    {{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $faq.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $faq.a | jsonify }}
+      }
+    }
+    {{- end -}}
+  ]
+}
+</script>
+{{- end -}}

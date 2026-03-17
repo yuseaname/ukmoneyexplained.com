@@ -1,0 +1,72 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ site.Title }} — {{ site.Params.tagline }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Preconnect for ads -->
+{{ if site.Params.adsense_enabled }}
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+{{ end }}
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="en_GB">
+{{ with site.Params.og_image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+
+<!-- JSON-LD Structured Data -->
+{{ if .IsPage }}
+  {{ if eq .Type "page" }}
+    {{- partial "schema-breadcrumb.html" . -}}
+  {{ else }}
+    {{- partial "schema-article.html" . -}}
+    {{- partial "schema-breadcrumb.html" . -}}
+    {{ if .Params.has_faq }}
+      {{- partial "schema-faq.html" . -}}
+    {{ end }}
+  {{ end }}
+{{ else if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.Title }}",
+  "url": "{{ site.BaseURL }}",
+  "description": "{{ site.Params.description }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.Title }}"
+  }
+}
+</script>
+{{ end }}
+
+<!-- CSS -->
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<!-- AdSense -->
+{{ if site.Params.adsense_enabled }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense_client }}" crossorigin="anonymous"></script>
+{{ end }}
+
+<!-- Google Analytics -->
+{{ with site.Params.google_analytics }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}');
+</script>
+{{ end }}
