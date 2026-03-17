@@ -1,0 +1,62 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.147.0'
+          extended: true
+
+      - name: Build site
+        run: hugo --minify --gc
+
+      - name: Start SSH agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
+
+      - name: Add server to known_hosts
+        env:
+          DEPLOY_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          DEPLOY_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "${DEPLOY_PORT:-65002}" -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+
+      - name: Ensure remote path exists
+        env:
+          DEPLOY_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          DEPLOY_USER: ${{ secrets.HOSTINGER_SSH_USER }}
+          DEPLOY_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+          DEPLOY_PATH: ${{ secrets.HOSTINGER_DEPLOY_PATH }}
+        run: |
+          ssh -p "${DEPLOY_PORT:-65002}" "$DEPLOY_USER@$DEPLOY_HOST" "mkdir -p '$DEPLOY_PATH'"
+
+      - name: Deploy site with rsync
+        env:
+          DEPLOY_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          DEPLOY_USER: ${{ secrets.HOSTINGER_SSH_USER }}
+          DEPLOY_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+          DEPLOY_PATH: ${{ secrets.HOSTINGER_DEPLOY_PATH }}
+        run: |
+          rsync -az --delete \
+            -e "ssh -p ${DEPLOY_PORT:-65002}" \
+            public/ \
+            "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/"

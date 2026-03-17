@@ -41,7 +41,7 @@ for var in SITE_DOMAIN DEPLOY_HOST DEPLOY_USER DEPLOY_PATH; do
     fi
 done
 
-DEPLOY_PORT="${DEPLOY_PORT:-22}"
+DEPLOY_PORT="${DEPLOY_PORT:-65002}"
 SSH_OPTS=( -p "$DEPLOY_PORT" -o StrictHostKeyChecking=accept-new )
 
 echo "============================================"
