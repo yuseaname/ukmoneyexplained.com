@@ -1,15 +1,6 @@
 ---
 title: "Fixed vs Tracker Mortgage UK"
-date: "2026-03-16T03:56:20+00:00"
-lastmod: "2026-03-16T03:56:20+00:00"
 description: "fixed vs tracker mortgage UK — explained in plain English. Learn how fixed vs tracker mortgage uk with clear examples, tables, and FAQs."
-categories: ["Mortgages"]
-tags: ["fixed vs tracker mortgage UK"]
-keywords: ["fixed vs tracker mortgage UK"]
-slug: "fixed-vs-tracker-mortgage-uk"
-schema_type: "Article"
-has_faq: true
-draft: false
 ---
 
 # Fixed vs Tracker Mortgage UK

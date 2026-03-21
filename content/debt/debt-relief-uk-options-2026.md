@@ -1,10 +1,6 @@
 ---
-title: UK Debt Relief Options 2026 Explained
-date: 2026-03-19
-description: A plain English guide to UK debt relief including IVA DRO bankruptcy DMP and sequestration
-categories: [debt]
-slug: debt-relief-uk-options-2026
-draft: false
+title: "UK Debt Relief Options 2026 Explained"
+description: "A plain English guide to UK debt relief including IVA DRO bankruptcy DMP and sequestration"
 ---
 
 > If you are struggling to pay your bills, there are official solutions designed to help. Whether you have low income or just too many creditors, options like Individual Voluntary Arrangements (IVAs), Debt Relief Orders (DROs), Bankruptcy, or Debt Management Plans (DMPs) can stop interest from growing and protect you from legal action. This guide breaks down exactly how each one works so you can choose the right path for your future.
@@ -69,4 +65,3 @@ Charity advice is always free. However, IVAs and Bankruptcy have fees paid from 
 
 **What happens if I miss a payment?**
 In a formal plan like an IVA or Bankruptcy, you must tell the supervisor immediately. They might be able to adjust the plan. In a DMP, the creditor may withdraw the interest stop and chase you for the original amount. Communication is key.
-

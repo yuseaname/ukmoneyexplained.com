@@ -1,15 +1,6 @@
 ---
 title: "Council Tax Bands UK Explained"
-date: "2026-03-16T04:07:36+00:00"
-lastmod: "2026-03-16T04:07:36+00:00"
 description: "council tax bands UK — explained in plain English. Learn how council tax bands uk explained with clear examples, tables, and FAQs."
-categories: ["Taxes & Government Payments"]
-tags: ["council tax bands UK"]
-keywords: ["council tax bands UK"]
-slug: "council-tax-bands-uk"
-schema_type: "Article"
-has_faq: true
-draft: false
 ---
 
 # Council Tax Bands UK Explained

@@ -1,15 +1,6 @@
 ---
 title: "Credit Score Ranges UK"
-date: "2026-03-16T03:38:59+00:00"
-lastmod: "2026-03-16T03:38:59+00:00"
 description: "credit score ranges UK — explained in plain English. Learn how credit score ranges uk with clear examples, tables, and FAQs."
-categories: ["Credit & Debt"]
-tags: ["credit score ranges UK"]
-keywords: ["credit score ranges UK"]
-slug: "credit-score-ranges-uk"
-schema_type: "Article"
-has_faq: true
-draft: false
 ---
 
 # Credit Score Ranges UK
