@@ -15,10 +15,10 @@ theme = 'adsense-base'
   [params.adsense]
     client_id = 'ca-pub-5566942094411042'
     [params.adsense.slots]
-      below_title = { id = '', format = 'auto', responsive = 'true' }
+      below_title = { id = '9770352885', format = 'auto', responsive = 'true' }
       after_intro = { id = '', format = 'auto', responsive = 'true' }
-      mid_article = { id = '', format = 'auto', responsive = 'true' }
-      end_article = { id = '', format = 'auto', responsive = 'true' }
+      mid_article = { id = '7429084400', format = 'auto', responsive = 'true' }
+      end_article = { id = '3364726638', format = 'auto', responsive = 'true' }
       sidebar = { id = '', format = 'vertical', responsive = 'true' }
 
 [taxonomies]
