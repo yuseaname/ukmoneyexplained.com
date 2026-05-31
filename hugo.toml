@@ -1,26 +1,29 @@
 baseURL = 'https://ukmoneyexplained.com/'
 languageCode = 'en-gb'
 title = 'UK Money Explained'
-theme = 'ukme'
+theme = 'adsense-base'
 
 [params]
-  tagline = "Simple explanations of money, bills, taxes, and finance in the UK."
+  site_name = 'UK Money Explained'
   description = "Clear, jargon-free explanations of UK finance topics — credit scores, mortgages, taxes, bills, and more."
+  tagline = "Simple explanations of money, bills, taxes, and finance in the UK."
   author = "UK Money Explained"
-  disclaimer = "This is for informational purposes only and does not constitute financial advice. Consult a qualified financial adviser for personal advice."
-  adsense_enabled = false
-  adsense_client = ""
-  adsense_slot_below_title = ""
-  adsense_slot_after_intro = ""
-  adsense_slot_mid_article = ""
-  adsense_slot_end_article = ""
-  adsense_slot_sidebar = ""
-  google_analytics = ""
-  og_image = "/images/og-default.png"
+  favicon = '/images/og-default.png'
+  og_image = '/images/og-default.png'
+  google_site_verification = ''
+
+  [params.adsense]
+    client_id = 'ca-pub-5566942094411042'
+    [params.adsense.slots]
+      below_title = { id = '', format = 'auto', responsive = 'true' }
+      after_intro = { id = '', format = 'auto', responsive = 'true' }
+      mid_article = { id = '', format = 'auto', responsive = 'true' }
+      end_article = { id = '', format = 'auto', responsive = 'true' }
+      sidebar = { id = '', format = 'vertical', responsive = 'true' }
 
 [taxonomies]
-  category = "categories"
-  tag = "tags"
+  category = 'categories'
+  tag = 'tags'
 
 [permalinks]
   [permalinks.page]
@@ -46,14 +49,8 @@ theme = 'ukme'
   filename = 'sitemap.xml'
   priority = 0.5
 
-[outputFormats]
-  [outputFormats.robots]
-    baseName = "robots"
-    isPlainText = true
-    mediaType = "text/plain"
-
 [outputs]
-  home = ["HTML", "RSS", "robots"]
+  home = ['HTML', 'RSS']
 
 [menus]
   [[menus.main]]

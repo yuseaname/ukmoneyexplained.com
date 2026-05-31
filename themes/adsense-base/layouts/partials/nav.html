@@ -1,0 +1,60 @@
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50" id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-14">
+      <!-- Logo -->
+      <a href="{{ .Site.BaseURL | relURL }}" class="text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors">
+        {{ .Site.Params.site_name | default .Site.Title }}
+      </a>
+
+      <!-- Desktop nav -->
+      <div class="hidden sm:flex items-center gap-6">
+        {{/* Menu items from config, fallback to auto sections */}}
+        {{ $menuItems := .Site.Menus.main }}
+        {{ if and $menuItems (gt (len $menuItems) 0) }}
+          {{ range $menuItems }}
+            <a href="{{ .URL }}" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">{{ .Name }}</a>
+          {{ end }}
+        {{ else }}
+          {{ range .Site.Sections }}
+            <a href="{{ .RelPermalink }}" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">{{ .Title }}</a>
+          {{ end }}
+        {{ end }}
+
+        <!-- Search placeholder -->
+        <a href="/search/" class="text-gray-400 hover:text-blue-600 transition-colors" aria-label="Search">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="sm:hidden p-2 text-gray-600 hover:text-gray-900" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-6 h-6" id="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg class="w-6 h-6 hidden" id="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="sm:hidden hidden border-t border-gray-200 pb-4" id="mobile-menu" role="menu">
+      <div class="pt-3 space-y-1">
+        {{ if and $menuItems (gt (len $menuItems) 0) }}
+          {{ range $menuItems }}
+            <a href="{{ .URL }}" class="block px-2 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded transition-colors" role="menuitem">{{ .Name }}</a>
+          {{ end }}
+        {{ else }}
+          {{ range .Site.Sections }}
+            <a href="{{ .RelPermalink }}" class="block px-2 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded transition-colors" role="menuitem">{{ .Title }}</a>
+          {{ end }}
+        {{ end }}
+        <a href="/search/" class="block px-2 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded transition-colors" role="menuitem">
+          Search
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

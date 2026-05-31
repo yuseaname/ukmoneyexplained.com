@@ -1,0 +1,9 @@
+{{- /* faq.html — FAQ item shortcode (collects into page Scratch for faq-schema) */ -}}
+{{- /* Usage: faq "What is X?" — Answer — /faq */ -}}
+{{- $question := .Get 0 -}}
+{{- $answer := .Inner | strings.TrimSpace | markdownify -}}
+<div class="my-4 border-l-4 border-blue-400 pl-4">
+  <h3 class="font-semibold text-gray-900">{{ $question }}</h3>
+  <div class="text-gray-600 mt-1">{{ $answer | safeHTML }}</div>
+</div>
+{{- .Page.Store.Add "faqs" (slice (dict "q" $question "a" .Inner)) -}}

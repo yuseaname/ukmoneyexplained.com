@@ -1,0 +1,87 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{/* Tailwind CSS CDN */}}
+<script src="https://cdn.tailwindcss.com"></script>
+
+{{/* Primary meta tags */}}
+<title>{{ .Title }}{{ with .Site.Title }} | {{ . }}{{ end }}</title>
+{{- with .Params.description -}}
+<meta name="description" content="{{ truncate 155 . }}">
+{{- end -}}
+{{- with .Params.author -}}
+<meta name="author" content="{{ . }}">
+{{- end -}}
+{{- with .Params.keywords -}}
+<meta name="keywords" content="{{ delimit . ", " }}">
+{{- end -}}
+<link rel="canonical" href="{{ .Params.canonical | default .Permalink }}">
+
+{{/* Favicon */}}
+{{- with .Site.Params.favicon -}}
+<link rel="icon" href="{{ . }}">
+{{- end -}}
+
+{{/* Open Graph */}}
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+{{- with .Params.description -}}
+<meta property="og:description" content="{{ truncate 155 . }}">
+{{- end -}}
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{- with .Params.image -}}
+<meta property="og:image" content="{{ . }}">
+{{- end -}}
+{{- with .Params.image_alt -}}
+<meta property="og:image:alt" content="{{ . }}">
+{{- end -}}
+{{- with .Site.LanguageCode -}}
+<meta property="og:locale" content="{{ . }}">
+{{- end -}}
+{{- if not .IsHome -}}
+  {{- with .Date -}}
+<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}">
+  {{- end -}}
+{{- end -}}
+{{- with .Params.updated -}}
+  {{- if reflect.IsMap . }}
+<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}">
+  {{- end -}}
+{{- end -}}
+{{- with .Params.author -}}
+<meta property="article:author" content="{{ . }}">
+{{- end -}}
+
+{{/* Twitter Card */}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+{{- with .Params.description -}}
+<meta name="twitter:description" content="{{ truncate 155 . }}">
+{{- end -}}
+{{- with .Params.image -}}
+<meta name="twitter:image" content="{{ . }}">
+{{- end -}}
+
+{{/* Robots */}}
+{{- if .Params.noindex -}}
+<meta name="robots" content="noindex, nofollow">
+{{- end -}}
+
+{{/* RSS */}}
+{{- with .OutputFormats.Get "rss" -}}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{- end -}}
+
+{{/* Schema.org structured data */}}
+{{- partial "head.schema.html" . -}}
+
+{{/* Google AdSense */}}
+{{- with .Site.Params.adsense.client_id -}}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+{{- end -}}
+
+{{/* Google Search Console verification */}}
+{{- with .Site.Params.google_site_verification -}}
+<meta name="google-site-verification" content="{{ . }}">
+{{- end -}}

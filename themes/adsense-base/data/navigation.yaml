@@ -1,0 +1,24 @@
+main:
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+    weight: 1
+  - name: About
+    url: /about
+    weight: 10
+  - name: Contact
+    url: /contact
+    weight: 11
+
+footer:
+  - name: Privacy Policy
+    url: /privacy
+  - name: Terms of Service
+    url: /terms
+  - name: About
+    url: /about
+  - name: Contact
+    url: /contact
+  - name: Editorial Policy
+    url: /editorial-policy

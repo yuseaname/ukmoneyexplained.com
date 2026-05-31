@@ -1,0 +1,24 @@
+{{- /* faq-schema.html — Collects all FAQ items and outputs FAQPage JSON-LD */ -}}
+{{- /* Usage: faq-schema — place at end of content or reference from head.schema.html */ -}}
+{{- $faqs := .Page.Store.Get "faqs" -}}
+{{- if and $faqs (gt (len $faqs) 0) -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- $last := sub (len $faqs) 1 -}}
+    {{- range $i, $faq := $faqs -}}
+    {
+      "@type": "Question",
+      "name": {{ $faq.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $faq.a | jsonify }}
+      }
+    }{{- if lt $i $last }},{{ end -}}
+    {{- end -}}
+  ]
+}
+</script>
+{{- end -}}

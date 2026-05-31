@@ -1,0 +1,44 @@
+{{ define "main" }}
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+  {{ partial "breadcrumbs.html" . }}
+  <header class="mb-8">
+    {{ partial "hero-image.html" . }}
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">{{ .Title }}</h1>
+    <div class="flex flex-wrap items-center gap-3 text-sm text-gray-500">
+      {{ with .Params.author }}<span class="font-medium text-gray-700">{{ . }}</span>{{ end }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
+    {{ with .Params.description }}<p class="text-lg text-gray-600 mt-3">{{ . }}</p>{{ end }}
+    {{ if .Params.updated }}<p class="text-xs text-gray-400 mt-1">Updated: {{ dateFormat "January 2, 2006" .Params.updated }}</p>{{ end }}
+  </header>
+
+  {{/* Ad slot: below title */}}
+  {{ if .Site.Params.adsense.client_id }}{{ partial "adsense.html" (dict "position" "below_title" "ctx" .) }}{{ end }}
+
+  {{/* Table of Contents (if available) */}}
+  {{ if and (gt .WordCount 800) .TableOfContents }}
+    <nav class="mb-8 p-4 bg-gray-50 rounded-lg border border-gray-200" aria-label="Table of contents">
+      <h2 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Table of Contents</h2>
+      {{ .TableOfContents }}
+    </nav>
+  {{ end }}
+
+  <div class="prose prose-lg max-w-none text-gray-800 leading-relaxed">
+    {{ .Content }}
+  </div>
+
+  {{/* Bottom ad */}}
+  {{ if .Site.Params.adsense.client_id }}{{ partial "adsense.html" (dict "position" "end_article" "ctx" .) }}{{ end }}
+
+  {{/* Author bio (if available) */}}
+  {{ with .Params.author_bio }}
+  <div class="mt-10 p-6 bg-gray-50 rounded-lg border border-gray-200">
+    <p class="text-sm font-semibold text-gray-700">{{ $.Params.author }}</p>
+    <p class="text-sm text-gray-600 mt-1">{{ . }}</p>
+  </div>
+  {{ end }}
+
+  {{ partial "related-posts.html" . }}
+</article>
+{{ end }}

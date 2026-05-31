@@ -1,0 +1,34 @@
+<footer class="bg-gray-50 border-t border-gray-200 mt-16" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div>
+        <a href="{{ .Site.BaseURL | relURL }}" class="text-sm font-bold text-gray-900 hover:text-blue-600 transition-colors">
+          {{ .Site.Params.site_name | default .Site.Title }}
+        </a>
+        <p class="text-xs text-gray-400 mt-1">© {{ now.Year }} All rights reserved.</p>
+      </div>
+
+      <nav aria-label="Footer links">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-500">
+          {{/* Check which pages actually exist */}}
+          {{ $allPages := where .Site.Pages "Kind" "page" }}
+          {{ $slugs := slice "privacy" "privacy-policy" "terms" "terms-of-service" "about" "contact" "editorial-policy" }}
+          {{ range $slugs }}
+            {{ $slug := . }}
+            {{ range $allPages }}
+              {{ if or (eq .File.BaseFileName $slug) (eq .File.TranslationBaseName $slug) }}
+                <li><a href="{{ .RelPermalink }}" class="hover:text-blue-600 transition-colors capitalize">{{ $slug | replace "-" " " }}</a></li>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+
+    {{/* AdSense disclosure */}}
+    <p class="text-xs text-gray-400 mt-6 max-w-3xl">
+      This site may display advertisements provided by third parties. Ad placements are automated and not personally endorsed.
+      {{ with .Site.Params.adsense.client_id }}We use Google AdSense to serve ads.{{ end }}
+    </p>
+  </div>
+</footer>

@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+  <header class="mb-10">
+    <h1 class="text-4xl sm:text-5xl font-bold text-gray-900">{{ .Site.Params.site_name | default .Site.Title }}</h1>
+    {{ with .Site.Params.description }}<p class="text-xl text-gray-600 mt-3">{{ . }}</p>{{ end }}
+  </header>
+
+  {{/* Ad slot: homepage top */}}
+  {{ if .Site.Params.adsense.client_id }}{{ partial "adsense.html" (dict "position" "below_title" "ctx" .) }}{{ end }}
+
+  {{/* Featured/Latest Articles */}}
+  <section class="mb-12" aria-label="Latest articles">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Latest Articles</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ range first 6 .Site.RegularPages.ByDate.Reverse }}
+        <article class="group">
+          <a href="{{ .RelPermalink }}" class="block h-full">
+            {{ with .Params.image }}
+              <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-3">
+                <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" loading="lazy">
+              </div>
+            {{ end }}
+            <h3 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{{ .Title }}</h3>
+            <p class="text-sm text-gray-500 mt-1">{{ .Date.Format "Jan 2, 2006" }}</p>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+
+  {{/* Category sections */}}
+  {{ range .Site.Sections }}
+    {{ if gt (len .Pages) 0 }}
+    <section class="mb-12" aria-label="{{ .Title }} articles">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ .Title }}</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {{ range first 4 (where .RegularPages ".Kind" "page") }}
+          <a href="{{ .RelPermalink }}" class="group flex gap-3 p-3 rounded-lg hover:bg-gray-50">
+            {{ with .Params.image }}
+              <img src="{{ . }}" alt="" class="w-20 h-20 object-cover rounded flex-shrink-0" loading="lazy">
+            {{ end }}
+            <div>
+              <h3 class="font-medium text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">{{ .Title }}</h3>
+              {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}" class="text-xs text-gray-400 mt-1 block">{{ .Format "Jan 2, 2006" }}</time>{{ end }}
+            </div>
+          </a>
+        {{ end }}
+      </div>
+      <a href="{{ .RelPermalink }}" class="text-blue-600 hover:text-blue-800 text-sm font-medium mt-3 inline-block">View all {{ .Title }} →</a>
+    </section>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

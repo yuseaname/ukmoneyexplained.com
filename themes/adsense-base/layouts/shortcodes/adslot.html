@@ -1,0 +1,5 @@
+{{- /* adslot.html — AdSense slot shortcode */ -}}
+{{- /* Usage: adslot "mid_article" */ -}}
+{{- /* Supported positions: below_title, after_intro, mid_article, end_article, sidebar, homepage_top */ -}}
+{{- $pos := .Get 0 | default "mid_article" -}}
+{{- partial "adsense.html" (dict "position" $pos "ctx" .Page) -}}

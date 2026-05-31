@@ -1,0 +1,11 @@
+{{- /* image.html — Responsive image with figure/figcaption */ -}}
+{{- /* Usage: image src="url" alt="" caption="" */ -}}
+<figure class="my-6">
+  <img src="{{ .Get "src" }}"
+       alt="{{ .Get "alt" | default .Get "src" }}"
+       class="w-full h-auto rounded-lg"
+       loading="lazy"
+       {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+       {{- with .Get "height" }} height="{{ . }}"{{ end -}}>
+  {{- with .Get "caption" }}<figcaption class="text-sm text-gray-500 text-center mt-2">{{ . }}</figcaption>{{ end -}}
+</figure>

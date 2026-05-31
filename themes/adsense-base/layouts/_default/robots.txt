@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: {{ .Site.BaseURL }}sitemap.xml
+{{- if .Site.Params.disallow_paths -}}
+{{ range .Site.Params.disallow_paths }}
+Disallow: {{ . }}
+{{ end }}
+{{- end -}}

@@ -1,0 +1,18 @@
+{{- /* adsense.html — AdSense ad slot renderer */ -}}
+{{- /* Usage: {{ partial "adsense.html" (dict "position" "mid_article" "ctx" $) }} */ -}}
+{{- $pos := .position -}}
+{{- $client := .ctx.Site.Params.adsense.client_id -}}
+{{- $slots := .ctx.Site.Params.adsense.slots -}}
+{{- if and $client $slots -}}
+  {{- with index $slots $pos -}}
+<div class="my-6 {{ if eq $pos "sidebar" }}sticky top-4{{ else }}text-center{{ end }}">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ $client }}"
+       data-ad-slot="{{ .id }}"
+       data-ad-format="{{ .format | default "auto" }}"
+       data-full-width-responsive="{{ .responsive | default "true" }}"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+  {{- end -}}
+{{- end -}}

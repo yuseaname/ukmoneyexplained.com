@@ -1,0 +1,22 @@
+{{- /* toc.html — Table of contents renderer */ -}}
+{{- with .TableOfContents -}}
+  {{- $html := . | strings.TrimSpace -}}
+  {{- if ne $html "" -}}
+    {{- /* Check if there are actual list items (not just an empty <nav>) */ -}}
+    {{- if strings.Contains $html "<li" -}}
+<nav class="toc my-6 p-4 bg-gray-50 rounded-lg border border-gray-200" aria-label="Table of Contents">
+  <h2 class="text-lg font-semibold text-gray-900 mb-3">Table of Contents</h2>
+  <div class="text-sm text-gray-700 leading-relaxed">
+    {{- /* Remove Hugo's default <nav id="TableOfContents"> wrapper since we provide our own */ -}}
+    {{- $clean := strings.Replace $html `<nav id="TableOfContents">` "" 1 -}}
+    {{- $clean = strings.Replace $clean `</nav>` "" 1 -}}
+    {{- $clean = strings.TrimSpace $clean -}}
+    {{- $clean = strings.Replace $clean "<ul>" "<ul class=\"space-y-1 ml-4\">" 1 -}}
+    {{- $clean = strings.Replace $clean "<ul>" "<ul class=\"ml-4\">" -1 -}}
+    {{- $clean = strings.Replace $clean "<li>" "<li class=\"mt-1\">" -1 -}}
+    {{- $clean | safeHTML -}}
+  </div>
+</nav>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

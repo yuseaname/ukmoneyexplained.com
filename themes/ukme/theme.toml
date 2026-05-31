@@ -1,9 +1,0 @@
-name = "UKME"
-license = "Proprietary"
-licenselink = ""
-description = "Custom AdSense-optimized theme for UK Money Explained"
-tags = ["finance", "adsense", "seo"]
-min_version = "0.120.0"
-
-[author]
-  name = "UK Money Explained"

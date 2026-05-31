@@ -1,0 +1,25 @@
+{{/* Related Posts: show up to 3 posts from the same section, excluding current */}}
+{{ $current := . }}
+{{ $allPages := where .Site.RegularPages ".Permalink" "!=" $current.Permalink }}
+{{ $related := $allPages | first 3 }}
+
+{{ if gt (len $related) 0 }}
+  <section class="mt-12 pt-8 border-t border-gray-200" aria-label="Related articles">
+    <h2 class="text-xl font-bold text-gray-900 mb-6">Related Articles</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      {{ range $related }}
+        <article class="group">
+          <a href="{{ .RelPermalink }}" class="block">
+            {{ with .Params.image }}
+              <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-3">
+                <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" loading="lazy">
+              </div>
+            {{ end }}
+            <h3 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">{{ .Title }}</h3>
+            {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}" class="text-xs text-gray-400 mt-1 block">{{ .Format "January 2, 2006" }}</time>{{ end }}
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

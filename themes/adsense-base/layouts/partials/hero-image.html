@@ -1,0 +1,19 @@
+{{/* Hero/Featured Image for article pages */}}
+{{ with . }}
+{{ $image := .Params.image }}
+{{ if $image }}
+  <figure class="mb-6">
+    <img
+      src="{{ $image }}"
+      alt="{{ with .Params.image_alt }}{{ . }}{{ else }}{{ .Title }}{{ end }}"
+      class="w-full h-auto rounded-lg"
+      loading="lazy"
+      {{ with .Params.image_width }}width="{{ . }}"{{ end }}
+      {{ with .Params.image_height }}height="{{ . }}"{{ end }}
+    >
+    {{ with .Params.image_caption }}
+      <figcaption class="text-sm text-gray-500 mt-2 text-center">{{ . }}</figcaption>
+    {{ end }}
+  </figure>
+{{ end }}
+{{ end }}

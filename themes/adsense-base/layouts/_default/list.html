@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+  {{ partial "breadcrumbs.html" . }}
+  <header class="mb-8">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="text-lg text-gray-600 mt-2">{{ . }}</p>{{ end }}
+  </header>
+
+  {{/* Ad: top of list */}}
+  {{ if .Site.Params.adsense.client_id }}{{ partial "adsense.html" (dict "position" "below_title" "ctx" .) }}{{ end }}
+
+  <div class="space-y-6">
+    {{ range .RegularPages }}
+      <article class="group">
+        <a href="{{ .RelPermalink }}" class="block">
+          {{ with .Params.image }}
+            <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-3">
+              <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" loading="lazy">
+            </div>
+          {{ end }}
+          <h2 class="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{{ .Title }}</h2>
+          <p class="text-gray-600 mt-1 line-clamp-2">{{ .Params.description | default (truncate 150 .Plain) }}</p>
+          {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}" class="text-sm text-gray-400 mt-2 block">{{ .Format "January 2, 2006" }}</time>{{ end }}
+        </a>
+      </article>
+    {{ end }}
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

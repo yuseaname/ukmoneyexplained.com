@@ -1,0 +1,8 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-20 text-center">
+  <h1 class="text-6xl font-bold text-gray-300">404</h1>
+  <p class="text-xl text-gray-600 mt-4">Page not found</p>
+  <p class="text-gray-500 mt-2">The page you're looking for doesn't exist or has been moved.</p>
+  <a href="{{ .Site.BaseURL | absURL }}" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">← Back to Home</a>
+</div>
+{{ end }}

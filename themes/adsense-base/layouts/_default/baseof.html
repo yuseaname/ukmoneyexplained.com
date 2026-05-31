@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang | default "en" }}" dir="{{ if eq .Lang "ar" }}rtl{{ else }}ltr{{ end }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="min-h-screen flex flex-col bg-white text-gray-900 {{ if eq .Site.Language.Lang "es" }}font-sans{{ else }}font-sans{{ end }}">
+
+  <!-- Navigation -->
+  {{ partial "nav.html" . }}
+
+  <!-- Main Content -->
+  <main class="flex-1">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <!-- Footer -->
+  {{ partial "footer.html" . }}
+
+  <!-- Minimal JS -->
+  {{ with resources.Get "js/main.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+
+</body>
+</html>

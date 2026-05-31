@@ -1,0 +1,37 @@
+{{/* Breadcrumbs: Home > Section > Subsection > Page Title */}}
+{{ with . }}
+{{ $ancestors := .Ancestors.Reverse }}
+<nav aria-label="Breadcrumb" class="mb-4">
+  <ol class="flex flex-wrap items-center gap-1.5 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
+    {{/* Home */}}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{{ .Site.BaseURL | relURL }}" class="hover:text-blue-600 transition-colors" itemprop="item">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content="1">
+    </li>
+
+    {{/* Ancestors (skip root) */}}
+    {{ $pos := 2 }}
+    {{ range where $ancestors "IsHome" false }}
+      <li class="text-gray-300" aria-hidden="true">/</li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="{{ .RelPermalink }}" class="hover:text-blue-600 transition-colors" itemprop="item">
+          <span itemprop="name">{{ .Title }}</span>
+        </a>
+        <meta itemprop="position" content="{{ $pos }}">
+      </li>
+      {{ $pos = add $pos 1 }}
+    {{ end }}
+
+    {{/* Current page (if not homepage) */}}
+    {{ if not .IsHome }}
+      <li class="text-gray-300" aria-hidden="true">/</li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
+        <span class="text-gray-700 font-medium" itemprop="name">{{ .Title }}</span>
+        <meta itemprop="position" content="{{ $pos }}">
+      </li>
+    {{ end }}
+  </ol>
+</nav>
+{{ end }}
