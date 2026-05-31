@@ -12,31 +12,40 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Hugo
-        uses: peaceiris/actions-hugo@v3
+      - uses: actions/checkout@v4
+      - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.147.0'
+          hugo-version: '0.141.0'
           extended: true
-
-      - name: Build site
-        run: hugo --minify --gc
-
-      - name: Setup SSH
+      - run: hugo --minify --gc
+      - name: Start SSH agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
+      - name: Add server to known_hosts
+        env:
+          DEPLOY_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          DEPLOY_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keygen -y -f ~/.ssh/deploy_key > /dev/null
-          ssh-keyscan -H -p 65002 "${{ secrets.HOSTINGER_SSH_HOST }}" >> ~/.ssh/known_hosts
-
-      - name: Deploy via rsync
+          ssh-keyscan -p "${DEPLOY_PORT:-65002}" -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+      - name: Ensure remote path exists
+        env:
+          DEPLOY_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          DEPLOY_USER: ${{ secrets.HOSTINGER_SSH_USER }}
+          DEPLOY_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+          DEPLOY_PATH: ${{ secrets.HOSTINGER_DEPLOY_PATH }}
         run: |
-          rsync -avz --delete \
-            -e "ssh -i ~/.ssh/deploy_key -p 65002" \
-            ./public/ \
-            "${{ secrets.HOSTINGER_SSH_USER }}@${{ secrets.HOSTINGER_SSH_HOST }}:~/domains/ukmoneyexplained.com/public_html/"
+          ssh -p "${DEPLOY_PORT:-65002}" "$DEPLOY_USER@$DEPLOY_HOST" "mkdir -p '$DEPLOY_PATH'"
+      - name: Deploy site with rsync
+        env:
+          DEPLOY_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          DEPLOY_USER: ${{ secrets.HOSTINGER_SSH_USER }}
+          DEPLOY_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+          DEPLOY_PATH: ${{ secrets.HOSTINGER_DEPLOY_PATH }}
+        run: |
+          rsync -az --delete \
+            -e "ssh -p ${DEPLOY_PORT:-65002}" \
+            public/ \
+            "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/"
