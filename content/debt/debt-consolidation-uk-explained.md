@@ -1,6 +1,7 @@
 ---
 title: "Debt Consolidation UK: How It Works, Pros and Cons (2026 Guide)"
 description: "Debt consolidation UK explained in plain English. Compare personal loans, balance transfer cards, and debt management plans. Find out if consolidation is right for you in 2026."
+image: "/images/how-to-budget-on-a-low-income-uk/how-to-budget-on-a-low-income-uk_hero_00001_.png"
 ---
 
 # Debt Consolidation UK: How It Works and Whether It's Worth It (2026)

@@ -1,6 +1,7 @@
 ---
 title: "Bad Credit Loans UK Explained"
 description: "Plain English guide to getting a loan with bad credit in the UK"
+image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
 ---
 
 > **Quick Answer:** A bad credit loan is a type of borrowing available to people who have a lower credit score, often due to missed payments in the past. While these loans are easier to get, they usually come with higher interest rates and stricter rules. To stay safe, always check if a lender is on the FCA register, consider a credit union, and never borrow more than you can realistically afford to pay back.

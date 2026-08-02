@@ -1,6 +1,7 @@
 ---
 title: "Mortgage Affordability Calculator UK"
 description: "mortgage affordability UK — explained in plain English. Learn how mortgage affordability calculator uk with clear examples, tables, and FAQs."
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00001_.png"
 ---
 
 # Mortgage Affordability Calculator UK

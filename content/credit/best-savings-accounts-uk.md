@@ -5,6 +5,7 @@ date: 2026-04-17
 draft: false
 tags: ["savings", "banking", "ISA", "UK finance"]
 categories: ["credit"]
+image: "/images/best-savings-accounts-uk-2026/best-savings-accounts-uk-2026_section-1_00002_.png"
 ---
 
 # Best Savings Accounts UK 2026: Compare Rates and Find the Right Account

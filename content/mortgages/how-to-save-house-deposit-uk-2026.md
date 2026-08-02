@@ -1,6 +1,7 @@
 ---
 title: "How to Save for a House Deposit in the UK: A Realistic 2026 Guide"
 description: "Learn how to save for a house deposit in the UK in 2026. How much you need, Lifetime ISA vs Help to Buy ISA, how long it takes on different incomes, and practical strategies to save faster."
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00001_.png"
 ---
 
 # How to Save for a House Deposit in the UK (2026 Guide)

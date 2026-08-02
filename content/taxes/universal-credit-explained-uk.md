@@ -12,6 +12,7 @@ keywords:
   - "Credit"
   - "UK"
   - "benefits"
+image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
 ---
 
 # Universal Credit Explained: A Complete Guide to Navigating the UK Benefit System

@@ -12,6 +12,7 @@ keywords:
   - "best free budgeting apps uk"
   - "cost of living budget plan uk"
   - "uk debt advice budgeting"
+image: "/images/how-to-budget-on-a-low-income-uk/how-to-budget-on-a-low-income-uk_hero_00001_.png"
 ---
 
 <div class="quick-answer">

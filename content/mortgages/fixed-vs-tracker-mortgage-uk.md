@@ -1,6 +1,7 @@
 ---
 title: "Fixed vs Tracker Mortgage UK"
 description: "fixed vs tracker mortgage UK — explained in plain English. Learn how fixed vs tracker mortgage uk with clear examples, tables, and FAQs."
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00001_.png"
 ---
 
 # Fixed vs Tracker Mortgage UK

@@ -12,6 +12,7 @@ keywords:
   - "Gains"
   - "Tax"
   - "UK"
+image: "/images/best-cashback-credit-cards-uk/best-cashback-credit-cards-uk_hero_00001_.png"
 ---
 
 # A Complete Guide to Capital Gains Tax UK: Managing Your Assets and Tax Liabilities

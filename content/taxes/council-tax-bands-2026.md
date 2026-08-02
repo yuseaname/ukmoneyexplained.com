@@ -12,6 +12,7 @@ keywords:
   - "council tax band calculator"
   - "council tax discounts single person"
   - "council tax exemption criteria"
+image: "/images/council-tax-bands-2026/council-tax-bands-2026_section-2_00002_.png"
 ---
 
 <p>Living costs in the United Kingdom continue to present challenges for households across all income brackets. As we move into 2026, the financial landscape is shaped by inflationary pressures and the enduring impact of the Bank of England base rate on mortgages and savings. For many homeowners and tenants, council tax represents one of the largest unavoidable fixed costs, yet it is often misunderstood. Many residents pay the standard rate without realising they may be eligible for reductions, discounts, or that their property band might be incorrect. Navigating this system effectively can save hundreds of pounds annually, freeing up income for essential spending or savings.</p>

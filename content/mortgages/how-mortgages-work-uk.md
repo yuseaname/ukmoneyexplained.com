@@ -1,6 +1,7 @@
 ---
 title: "How Mortgages Work UK"
 description: "how mortgages work UK — explained in plain English. Learn how how mortgages work uk with clear examples, tables, and FAQs."
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00001_.png"
 ---
 
 **What is a Mortgage?**  

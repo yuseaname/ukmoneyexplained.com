@@ -1,6 +1,7 @@
 ---
 title: "What Affects Your Credit Score UK"
 description: "what affects credit score UK — explained in plain English. Learn how what affects your credit score uk with clear examples, tables, and FAQs."
+image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
 ---
 
 # What Affects Your Credit Score UK  

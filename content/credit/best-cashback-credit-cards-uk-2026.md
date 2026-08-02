@@ -12,6 +12,7 @@ keywords:
   - "best rewards credit cards UK"
   - "cashback credit card fees"
   - "annual fee cashback credit cards UK"
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_section-2_00002_.png"
 ---
 
 <div class="quick-answer">

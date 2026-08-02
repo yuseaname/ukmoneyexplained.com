@@ -12,6 +12,7 @@ keywords:
   - "loans"
   - "vs"
   - "personal"
+image: "/images/how-to-budget-on-a-low-income-uk/how-to-budget-on-a-low-income-uk_hero_00001_.png"
 ---
 
 # Payday Loans vs Personal Loans UK: A Comprehensive Guide to Choosing the Right Credit

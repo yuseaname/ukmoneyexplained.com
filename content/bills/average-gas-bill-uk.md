@@ -1,6 +1,7 @@
 ---
 title: "Average Gas Bill UK"
 description: "average gas bill UK — explained in plain English. Learn how average gas bill uk with clear examples, tables, and FAQs."
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00002_.png"
 ---
 
 **Understanding the Average Gas Bill in the UK**  

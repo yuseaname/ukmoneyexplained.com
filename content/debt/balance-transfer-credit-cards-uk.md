@@ -12,6 +12,7 @@ keywords:
   - "transfer"
   - "cards"
   - "UK"
+image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
 ---
 
 # Mastering Debt Management: The Ultimate Guide to Balance Transfer Credit Cards in the UK

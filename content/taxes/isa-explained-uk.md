@@ -12,6 +12,7 @@ keywords:
   - "UK"
   - "explained"
   - "Individual"
+image: "/images/best-cashback-credit-cards-uk/best-cashback-credit-cards-uk_hero_00001_.png"
 ---
 
 # ISA Explained UK: The Complete Guide to Tax-Funded Savings and Investing

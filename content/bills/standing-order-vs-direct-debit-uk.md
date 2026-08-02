@@ -12,6 +12,7 @@ keywords:
   - "order"
   - "vs"
   - "direct"
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00002_.png"
 ---
 
 # Standing Order vs Direct Debit UK: Which One Should You Use?

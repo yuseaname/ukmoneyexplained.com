@@ -6,6 +6,7 @@ date: 2026-04-17
 draft: false
 tags: ["debt", "debt management", "IVA", "UK finance"]
 categories: ["debt"]
+image: "/images/how-to-budget-on-a-low-income-uk/how-to-budget-on-a-low-income-uk_hero_00001_.png"
 ---
 
 # Debt Management Plans UK: Complete Guide to Getting Out of Debt

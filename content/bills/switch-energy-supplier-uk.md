@@ -12,6 +12,7 @@ keywords:
   - "energy"
   - "supplier"
   - "UK"
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00002_.png"
 ---
 
 # How to Switch Energy Supplier UK: A Complete Guide to Reducing Your Household Bills

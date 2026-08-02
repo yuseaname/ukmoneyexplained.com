@@ -12,6 +12,7 @@ keywords:
   - "credit"
   - "score"
   - "UK"
+image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
 ---
 
 # How to Check Your Credit Score Free in the UK: A Complete Guide

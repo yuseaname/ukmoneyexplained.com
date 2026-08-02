@@ -1,6 +1,7 @@
 ---
 title: "National Insurance Explained UK"
 description: "national insurance explained — explained in plain English. Learn how national insurance explained uk with clear examples, tables, and FAQs."
+image: "/images/best-cashback-credit-cards-uk/best-cashback-credit-cards-uk_hero_00001_.png"
 ---
 
 **National Insurance Explained UK**  

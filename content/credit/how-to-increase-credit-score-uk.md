@@ -1,6 +1,7 @@
 ---
 title: "How to Increase Your Credit Score UK"
 description: "how to increase credit score UK — explained in plain English. Learn how how to increase your credit score uk with clear examples, tables, and FAQs."
+image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
 ---
 
 # How to Increase Your Credit Score UK

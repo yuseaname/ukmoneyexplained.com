@@ -1,6 +1,7 @@
 ---
 title: "Council Tax Bands UK Explained"
 description: "council tax bands UK — explained in plain English. Learn how council tax bands uk explained with clear examples, tables, and FAQs."
+image: "/images/best-cashback-credit-cards-uk/best-cashback-credit-cards-uk_hero_00001_.png"
 ---
 
 # Council Tax Bands UK Explained

@@ -5,6 +5,7 @@ date: 2026-04-17
 draft: false
 tags: ["council tax", "tax", "UK bills"]
 categories: ["taxes"]
+image: "/images/council-tax-bands-explained-2026/council-tax-bands-explained-2026_section-2_00001_.png"
 ---
 
 # Council Tax Bands Explained: Check Your Band and Save Money

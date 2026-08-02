@@ -1,6 +1,7 @@
 ---
 title: "How To Reduce Your Electricity Bill UK"
 description: "Simple steps to lower your electricity bill in the UK including switching tariffs and government schemes"
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00002_.png"
 ---
 
 > **Quick Answer:** You can reduce your electricity bill by switching to a cheaper energy tariff, installing a smart meter to track usage, improving home insulation, and applying for government support schemes like the Warm Home Discount. Small daily habits, such as unplugging devices and washing clothes in cold water, also make a big difference over time.

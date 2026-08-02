@@ -5,6 +5,7 @@ date: 2026-04-17
 draft: false
 tags: ["savings", "emergency fund", "budgeting", "UK finance"]
 categories: ["credit"]
+image: "/images/how-to-budget-on-a-low-income-uk/how-to-budget-on-a-low-income-uk_hero_00001_.png"
 ---
 
 # Emergency Fund Guide UK: How Much to Save and Where to Keep It

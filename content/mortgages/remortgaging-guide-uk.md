@@ -5,6 +5,7 @@ date: 2026-04-17
 draft: false
 tags: ["mortgage", "remortgaging", "UK property"]
 categories: ["mortgages"]
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00001_.png"
 ---
 
 # Remortgaging Guide UK 2026: When to Remortgage and How to Get the Best Deal

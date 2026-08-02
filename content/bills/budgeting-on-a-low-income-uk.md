@@ -12,6 +12,7 @@ keywords:
   - "cost of living budget plan"
   - "free budgeting apps UK"
   - "universal credit budgeting advice"
+image: "/images/budgeting-on-a-low-income-uk/budgeting-on-a-low-income-uk_hero_00001_.png"
 ---
 
 <div class="quick-answer">

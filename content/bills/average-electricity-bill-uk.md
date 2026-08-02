@@ -1,6 +1,7 @@
 ---
 title: "Average Electricity Bill UK"
 description: "average electricity bill UK — explained in plain English. Learn how average electricity bill uk with clear examples, tables, and FAQs."
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00002_.png"
 ---
 
 # Average Electricity Bill UK

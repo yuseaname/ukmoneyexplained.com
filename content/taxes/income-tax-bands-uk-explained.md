@@ -1,6 +1,7 @@
 ---
 title: "Income Tax Bands UK Explained"
 description: "income tax bands UK explained — explained in plain English. Learn how income tax bands uk explained with clear examples, tables, and FAQs."
+image: "/images/best-cashback-credit-cards-uk/best-cashback-credit-cards-uk_hero_00001_.png"
 ---
 
 # Income Tax Bands UK Explained

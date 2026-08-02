@@ -12,6 +12,7 @@ keywords:
   - "deposit"
   - "UK"
   - "how"
+image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00001_.png"
 ---
 
 # How Much Deposit for a House in the UK? A Complete Guide to Planning Your Purchase

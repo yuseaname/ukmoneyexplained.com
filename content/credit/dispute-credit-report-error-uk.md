@@ -12,6 +12,7 @@ keywords:
   - "report"
   - "dispute"
   - "UK"
+image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
 ---
 
 # How to Dispute a Credit Report Error in the UK: A Step-by-Step Guide
