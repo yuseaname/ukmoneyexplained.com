@@ -1,26 +1,35 @@
 {{ define "main" }}
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
   {{ partial "breadcrumbs.html" . }}
-  <header class="mb-8">
+
+  <!-- Page Header -->
+  <header class="mb-10">
     <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">{{ .Title }}</h1>
-    {{ with .Params.description }}<p class="text-lg text-gray-600 mt-2">{{ . }}</p>{{ end }}
+    {{ with .Params.description }}<p class="text-lg text-gray-600 mt-2 max-w-2xl">{{ . }}</p>{{ end }}
   </header>
 
   {{/* Ad: top of list */}}
   {{ if .Site.Params.adsense.client_id }}{{ partial "adsense.html" (dict "position" "below_title" "ctx" .) }}{{ end }}
 
-  <div class="space-y-6">
+  <!-- Articles Grid -->
+  <div class="section-grid">
     {{ range .RegularPages }}
-      <article class="group">
+      <article class="card">
         <a href="{{ .RelPermalink }}" class="block">
           {{ with .Params.image }}
-            <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-3">
-              <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" loading="lazy">
+            <div class="overflow-hidden">
+              <img src="{{ . }}" alt="{{ $.Title }}" class="card-image" loading="lazy">
             </div>
           {{ end }}
-          <h2 class="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{{ .Title }}</h2>
-          <p class="text-gray-600 mt-1 line-clamp-2">{{ .Params.description | default (truncate 150 .Plain) }}</p>
-          {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}" class="text-sm text-gray-400 mt-2 block">{{ .Format "January 2, 2006" }}</time>{{ end }}
+          <div class="card-body">
+            <h2 class="card-title">{{ .Title }}</h2>
+            <p class="card-text">{{ .Params.description | default (truncate 120 .Plain) }}</p>
+            <div class="flex items-center justify-between mt-3">
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="card-meta">{{ .Date.Format "Jan 2, 2006" }}</time>
+              <span class="text-xs text-gray-400">{{ .ReadingTime }} min read</span>
+            </div>
+          </div>
         </a>
       </article>
     {{ end }}

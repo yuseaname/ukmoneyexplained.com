@@ -1,37 +1,39 @@
-{{/* Breadcrumbs: Home > Section > Subsection > Page Title */}}
+{{/* Breadcrumbs: Home > Section > Subsection > Page Title (enhanced with SVG separator) */}}
 {{ with . }}
 {{ $ancestors := .Ancestors.Reverse }}
-<nav aria-label="Breadcrumb" class="mb-4">
-  <ol class="flex flex-wrap items-center gap-1.5 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
-    {{/* Home */}}
-    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a href="{{ .Site.BaseURL | relURL }}" class="hover:text-blue-600 transition-colors" itemprop="item">
-        <span itemprop="name">Home</span>
+<nav aria-label="Breadcrumb" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+  {{/* Home */}}
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href="{{ .Site.BaseURL | relURL }}" itemprop="item">
+      <span itemprop="name">Home</span>
+    </a>
+    <meta itemprop="position" content="1">
+  </span>
+
+  {{/* Ancestors (skip root) */}}
+  {{ $pos := 2 }}
+  {{ range where $ancestors "IsHome" false }}
+    <span class="breadcrumbs-sep" aria-hidden="true">
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    </span>
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{{ .RelPermalink }}" itemprop="item">
+        <span itemprop="name">{{ .Title }}</span>
       </a>
-      <meta itemprop="position" content="1">
-    </li>
+      <meta itemprop="position" content="{{ $pos }}">
+    </span>
+    {{ $pos = add $pos 1 }}
+  {{ end }}
 
-    {{/* Ancestors (skip root) */}}
-    {{ $pos := 2 }}
-    {{ range where $ancestors "IsHome" false }}
-      <li class="text-gray-300" aria-hidden="true">/</li>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a href="{{ .RelPermalink }}" class="hover:text-blue-600 transition-colors" itemprop="item">
-          <span itemprop="name">{{ .Title }}</span>
-        </a>
-        <meta itemprop="position" content="{{ $pos }}">
-      </li>
-      {{ $pos = add $pos 1 }}
-    {{ end }}
-
-    {{/* Current page (if not homepage) */}}
-    {{ if not .IsHome }}
-      <li class="text-gray-300" aria-hidden="true">/</li>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
-        <span class="text-gray-700 font-medium" itemprop="name">{{ .Title }}</span>
-        <meta itemprop="position" content="{{ $pos }}">
-      </li>
-    {{ end }}
-  </ol>
+  {{/* Current page (if not homepage) */}}
+  {{ if not .IsHome }}
+    <span class="breadcrumbs-sep" aria-hidden="true">
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    </span>
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
+      <span class="breadcrumbs-current" itemprop="name">{{ .Title }}</span>
+      <meta itemprop="position" content="{{ $pos }}">
+    </span>
+  {{ end }}
 </nav>
 {{ end }}

@@ -1,34 +1,65 @@
 <footer class="bg-gray-50 border-t border-gray-200 mt-16" role="contentinfo">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-      <div>
-        <a href="{{ .Site.BaseURL | relURL }}" class="text-sm font-bold text-gray-900 hover:text-blue-600 transition-colors">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Brand column -->
+      <div class="sm:col-span-2 lg:col-span-1">
+        <a href="{{ .Site.BaseURL | relURL }}" class="flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-primary-600 transition-colors">
+          <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
           {{ .Site.Params.site_name | default .Site.Title }}
         </a>
-        <p class="text-xs text-gray-400 mt-1">© {{ now.Year }} All rights reserved.</p>
+        {{ with .Site.Params.description }}
+        <p class="text-xs text-gray-500 mt-3 leading-relaxed max-w-xs">{{ . }}</p>
+        {{ end }}
+        <p class="text-xs text-gray-400 mt-4">© {{ now.Year }} All rights reserved.</p>
       </div>
 
-      <nav aria-label="Footer links">
-        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-500">
-          {{/* Check which pages actually exist */}}
+      <!-- Quick Links -->
+      <div>
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="/" class="text-sm text-gray-500 hover:text-primary-600 transition-colors">Home</a></li>
+          <li><a href="/blog/" class="text-sm text-gray-500 hover:text-primary-600 transition-colors">Blog</a></li>
+          <li><a href="/about/" class="text-sm text-gray-500 hover:text-primary-600 transition-colors">About</a></li>
+          <li><a href="/contact/" class="text-sm text-gray-500 hover:text-primary-600 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Popular Categories -->
+      <div>
+        <h3 class="footer-heading">Categories</h3>
+        <ul class="space-y-2">
+          {{ range first 6 .Site.Sections }}
+          <li><a href="{{ .RelPermalink }}" class="text-sm text-gray-500 hover:text-primary-600 transition-colors">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Policies -->
+      <div>
+        <h3 class="footer-heading">Policies</h3>
+        <ul class="space-y-2">
           {{ $allPages := where .Site.Pages "Kind" "page" }}
-          {{ $slugs := slice "privacy" "privacy-policy" "terms" "terms-of-service" "about" "contact" "editorial-policy" }}
+          {{ $slugs := slice "privacy" "privacy-policy" "disclosure" "editorial-policy" "terms" "terms-of-service" }}
           {{ range $slugs }}
             {{ $slug := . }}
             {{ range $allPages }}
               {{ if or (eq .File.BaseFileName $slug) (eq .File.TranslationBaseName $slug) }}
-                <li><a href="{{ .RelPermalink }}" class="hover:text-blue-600 transition-colors capitalize">{{ $slug | replace "-" " " }}</a></li>
+                <li><a href="{{ .RelPermalink }}" class="text-sm text-gray-500 hover:text-primary-600 transition-colors capitalize">{{ replace $slug "-" " " }}</a></li>
               {{ end }}
             {{ end }}
           {{ end }}
         </ul>
-      </nav>
+      </div>
     </div>
 
-    {{/* AdSense disclosure */}}
-    <p class="text-xs text-gray-400 mt-6 max-w-3xl">
-      This site may display advertisements provided by third parties. Ad placements are automated and not personally endorsed.
-      {{ with .Site.Params.adsense.client_id }}We use Google AdSense to serve ads.{{ end }}
-    </p>
+    <!-- AdSense disclosure -->
+    <div class="mt-10 pt-6 border-t border-gray-200">
+      <p class="text-xs text-gray-400 max-w-3xl">
+        This site may display advertisements provided by third parties. Ad placements are automated and not personally endorsed.
+        {{ with .Site.Params.adsense.client_id }}We use Google AdSense to serve ads.{{ end }}
+      </p>
+    </div>
   </div>
 </footer>
