@@ -19,6 +19,10 @@ theme = 'adsense-base'
       mid_article = { id = '7429084400', format = 'auto', responsive = 'true' }
       end_article = { id = '3364726638', format = 'auto', responsive = 'true' }
 
+  [params.rybbit]
+    instance_url = 'https://app.rybbit.io'
+    site_id = '16dab9895425'
+
 [taxonomies]
   category = 'categories'
   tag = 'tags'
