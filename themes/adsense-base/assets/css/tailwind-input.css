@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Saira:wght@600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --ukm-ink: #0B1A2F;
+    --ukm-slate: #334155;
+    --ukm-muted: #64758B;
+    --ukm-parchment: #F7F5F1;
+    --ukm-paper: #FFFFFF;
+    --ukm-ruler: #D6CFC4;
+    --ukm-authority: #0F4C5C;
+    --ukm-crown: #1F4D35;
+    --ukm-caution: #B45F06;
+    --ukm-urgent: #9B2C2C;
+  }
+  body {
+    background-color: var(--ukm-parchment);
+    color: var(--ukm-ink);
+  }
+}

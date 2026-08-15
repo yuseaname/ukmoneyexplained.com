@@ -1,4 +1,5 @@
 ---
+format: comparison
 title: "Best cashback credit cards uk: Full Comparison (2026)"
 description: "Learn everything about best cashback credit cards UK in 2026. Costs, comparisons, expert tips for US homeowners."
 slug: "best-cashback-credit-cards-uk-2026"
@@ -13,6 +14,8 @@ keywords:
   - "cashback credit card fees"
   - "annual fee cashback credit cards UK"
 image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_section-2_00002_.png"
+quick_answer:
+  - "Learn everything about best cashback credit cards UK in 2026. Costs, comparisons, expert tips for US homeowners."
 ---
 
 <div class="quick-answer">

@@ -1,7 +1,10 @@
 ---
 title: "UK Debt Relief Options 2026 Explained"
 description: "A plain English guide to UK debt relief including IVA DRO bankruptcy DMP and sequestration"
-image: "/images/how-to-budget-on-a-low-income-uk/how-to-budget-on-a-low-income-uk_hero_00001_.png"
+format: definition
+quick_answer:
+  - "A plain English guide to UK debt relief including IVA DRO bankruptcy DMP and sequestration"
+  - "This guide explains the key facts, rules and exceptions."
 ---
 
 > If you are struggling to pay your bills, there are official solutions designed to help. Whether you have low income or just too many creditors, options like Individual Voluntary Arrangements (IVAs), Debt Relief Orders (DROs), Bankruptcy, or Debt Management Plans (DMPs) can stop interest from growing and protect you from legal action. This guide breaks down exactly how each one works so you can choose the right path for your future.

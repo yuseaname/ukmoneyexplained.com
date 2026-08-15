@@ -3,6 +3,8 @@ title: "Budgeting on a low income uk: Complete Guide (2026)"
 description: "Learn everything about budgeting on a low income UK in 2026. Costs, comparisons, expert tips for US homeowners."
 slug: "budgeting-on-a-low-income-uk"
 date: 2026-05-29
+lastmod: 2026-08-09
+canonical: "/how-to-budget-on-a-low-income-uk/"
 draft: false
 author: "UK Money Explained"
 section: "bills"
@@ -13,6 +15,9 @@ keywords:
   - "free budgeting apps UK"
   - "universal credit budgeting advice"
 image: "/images/budgeting-on-a-low-income-uk/budgeting-on-a-low-income-uk_hero_00001_.png"
+format: explainer
+quick_answer:
+  - "Learn everything about budgeting on a low income UK in 2026. Costs, comparisons, expert tips for US …"
 ---
 
 <div class="quick-answer">

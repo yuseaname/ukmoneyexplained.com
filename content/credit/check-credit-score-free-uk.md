@@ -12,7 +12,10 @@ keywords:
   - "credit"
   - "score"
   - "UK"
-image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
+format: step-by-step
+quick_answer:
+  - "Learn how to check your credit score for free in the UK. Compare Experian, Equifax and TransUnion re…"
+  - "Follow the process below to check your credit score free in the uk: complete guide."
 ---
 
 # How to Check Your Credit Score Free in the UK: A Complete Guide

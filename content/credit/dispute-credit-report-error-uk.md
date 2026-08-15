@@ -12,7 +12,10 @@ keywords:
   - "report"
   - "dispute"
   - "UK"
-image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
+format: step-by-step
+quick_answer:
+  - "Found an error on your UK credit report? Learn how to dispute inaccuracies with Experian, Equifax an…"
+  - "Follow the process below to dispute a credit report error in the uk: step-by-step."
 ---
 
 # How to Dispute a Credit Report Error in the UK: A Step-by-Step Guide

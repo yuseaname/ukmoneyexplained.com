@@ -6,7 +6,6 @@ date: 2026-04-17
 draft: false
 tags: ["debt", "debt management", "IVA", "UK finance"]
 categories: ["debt"]
-image: "/images/how-to-budget-on-a-low-income-uk/how-to-budget-on-a-low-income-uk_hero_00001_.png"
 ---
 
 # Debt Management Plans UK: Complete Guide to Getting Out of Debt
@@ -182,6 +181,13 @@ No. A DMP covers unsecured debt. Your car is a secured asset. However, if you ar
 
 ### How long does a DMP last?
 There is no set time. It depends on how much debt you have and how much you can afford to pay. For most people, it lasts between 3 and 5 years.
+
+## Sources and Further Reading
+
+- [StepChange Debt Charity](https://www.stepchange.org/) - Free debt advice
+- [MoneyHelper](https://www.moneyhelper.org.uk/) - Government-backed free money advice
+- [GOV.UK — Debt respite scheme (Breathing Space)](https://www.gov.uk/government/publications/debt-respite-scheme-breathing-space)
+- See also: [Debt consolidation explained](/debt-consolidation-uk-explained/) and [Debt relief options](/debt-relief-uk-options-2026/)
 
 ## Conclusion: Take Control of Your Finances
 

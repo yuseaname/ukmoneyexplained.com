@@ -1,0 +1,12 @@
+{{ $script := .Get "script" }}
+{{ if $script }}
+  {{ with resources.Get (printf "js/calculators/%s" $script) }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+{{ end }}
+
+<div class="max-w-2xl mx-auto">
+  <div class="ukm-card">
+    {{ .Inner }}
+  </div>
+</div>

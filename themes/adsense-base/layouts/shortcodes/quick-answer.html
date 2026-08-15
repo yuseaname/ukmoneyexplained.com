@@ -1,0 +1,20 @@
+{{ if or .Params.quick_answer .Inner }}
+<aside class="ukm-card mb-8 border-l-4 border-l-ukm-crown" aria-labelledby="quick-answer-heading">
+  <h2 id="quick-answer-heading" class="text-lg font-heading font-semibold text-ukm-ink mb-2">At a glance</h2>
+  {{ with .Params.quick_answer }}
+    <ul class="space-y-1.5 text-ukm-slate">
+      {{ range . }}
+        <li class="flex gap-2">
+          <span class="text-ukm-crown" aria-hidden="true">—</span>
+          <span>{{ . }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ with .Inner }}
+    <div class="text-ukm-slate prose-sm">
+      {{ . }}
+    </div>
+  {{ end }}
+</aside>
+{{ end }}

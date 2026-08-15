@@ -1,67 +1,39 @@
-<nav class="nav-container sticky top-0 z-50" id="main-nav" role="navigation" aria-label="Main navigation">
+<nav class="sticky top-0 z-50 bg-ukm-parchment/95 backdrop-blur-sm border-b border-ukm-ruler ukm-rule" id="main-nav" role="navigation" aria-label="Main navigation">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="flex items-center justify-between h-14">
-      <!-- Logo with icon -->
-      <a href="{{ .Site.BaseURL | relURL }}" class="flex items-center gap-2 text-lg font-bold text-gray-900 hover:text-primary-600 transition-colors">
-        <svg class="w-6 h-6 text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-        </svg>
-        <span>{{ .Site.Params.site_name | default .Site.Title }}</span>
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="{{ "/" | relURL }}" class="font-display font-bold text-xl tracking-tight text-ukm-ink hover:text-ukm-authority transition-colors ukm-focus" aria-label="ukmoneyexplained.com home">
+        <span class="font-heading italic">UK</span>Money<span class="text-ukm-authority">.</span>
       </a>
 
-      <!-- Desktop nav -->
-      <div class="hidden sm:flex items-center gap-1">
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-1">
         {{ $currentPage := . }}
-        {{ $menuItems := .Site.Menus.main }}
-        {{ if and $menuItems (gt (len $menuItems) 0) }}
-          {{ range $menuItems }}
-            {{ $isActive := or (eq $currentPage.RelPermalink .URL) (and (ne .URL "/") (hasPrefix $currentPage.RelPermalink .URL)) }}
-            <a href="{{ .URL }}"
-               class="px-3 py-2 text-sm font-medium rounded-lg transition-colors
-               {{ if $isActive }}bg-primary-50 text-primary-700{{ else }}text-gray-600 hover:text-gray-900 hover:bg-gray-50{{ end }}">
-              {{ .Name }}
-            </a>
-          {{ end }}
-        {{ else }}
-          {{ range .Site.Sections }}
-            <a href="{{ .RelPermalink }}" class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">{{ .Title }}</a>
-          {{ end }}
+        {{ range .Site.Menus.main }}
+          {{ $isActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+          <a href="{{ .URL }}" class="px-3 py-2 text-sm font-medium rounded-md ukm-focus {{ if $isActive }}text-ukm-authority border-b-2 border-ukm-authority{{ else }}text-ukm-slate hover:text-ukm-ink hover:bg-ukm-paper/60{{ end }}" {{ if $isActive }}aria-current="page"{{ end }}>
+            {{ .Name }}
+          </a>
         {{ end }}
-
-
       </div>
 
-      <!-- Mobile hamburger -->
-      <button class="sm:hidden p-2 text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-colors" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="w-6 h-6" id="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-        <svg class="w-6 h-6 hidden" id="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
+      <!-- Mobile Menu Button -->
+      <button type="button" class="md:hidden p-2 rounded-md text-ukm-slate hover:text-ukm-ink hover:bg-ukm-paper/60 ukm-focus" id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
+  </div>
 
-    <!-- Mobile menu -->
-    <div class="sm:hidden hidden border-t border-gray-200 pb-4" id="mobile-menu" role="menu">
-      <div class="pt-3 space-y-1">
-        {{ $currentPage := . }}
-        {{ $menuItems := .Site.Menus.main }}
-        {{ if and $menuItems (gt (len $menuItems) 0) }}
-          {{ range $menuItems }}
-            {{ $isActive := or (eq $currentPage.RelPermalink .URL) (and (ne .URL "/") (hasPrefix $currentPage.RelPermalink .URL)) }}
-            <a href="{{ .URL }}"
-               class="block px-3 py-2.5 text-base font-medium rounded-lg transition-colors
-               {{ if $isActive }}bg-primary-50 text-primary-700{{ else }}text-gray-600 hover:text-gray-900 hover:bg-gray-50{{ end }}"
-               role="menuitem">{{ .Name }}</a>
-          {{ end }}
-        {{ else }}
-          {{ range .Site.Sections }}
-            <a href="{{ .RelPermalink }}" class="block px-3 py-2.5 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors" role="menuitem">{{ .Title }}</a>
-          {{ end }}
-        {{ end }}
-
-      </div>
+  <!-- Mobile Nav Panel -->
+  <div class="md:hidden hidden border-t border-ukm-ruler bg-ukm-paper" id="mobile-menu" role="region" aria-label="Mobile navigation">
+    <div class="px-4 py-3 space-y-1">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ $isActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+        <a href="{{ .URL }}" class="block px-3 py-2.5 rounded-md text-base font-medium ukm-focus {{ if $isActive }}bg-ukm-parchment text-ukm-authority font-semibold{{ else }}text-ukm-slate hover:text-ukm-ink hover:bg-ukm-parchment{{ end }}" {{ if $isActive }}aria-current="page"{{ end }}>
+          {{ .Name }}
+        </a>
+      {{ end }}
     </div>
   </div>
 </nav>

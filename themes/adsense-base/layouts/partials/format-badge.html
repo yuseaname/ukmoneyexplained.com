@@ -1,0 +1,13 @@
+{{ $format := .Params.format | default "guide" }}
+{{ $label := replace (title $format) "-" " " }}
+{{ $colors := dict
+  "definition" "bg-ukm-crown/10 text-ukm-crown"
+  "step-by-step" "bg-ukm-authority/10 text-ukm-authority"
+  "comparison" "bg-ukm-slate/10 text-ukm-slate"
+  "calculator" "bg-section-tools/10 text-section-tools"
+  "data-study" "bg-ukm-caution/10 text-ukm-caution"
+  "checklist" "bg-ukm-crown/10 text-ukm-crown"
+  "explainer" "bg-ukm-authority/10 text-ukm-authority"
+  "guide" "bg-ukm-ruler text-ukm-slate"
+}}
+<span class="ukm-badge {{ index $colors $format | default (index $colors "guide") }}">{{ $label }}</span>

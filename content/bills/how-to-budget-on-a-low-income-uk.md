@@ -13,6 +13,10 @@ keywords:
   - "cost of living budget plan uk"
   - "uk debt advice budgeting"
 image: "/images/how-to-budget-on-a-low-income-uk/how-to-budget-on-a-low-income-uk_hero_00001_.png"
+format: step-by-step
+quick_answer:
+  - "Learn everything about how to budget on a low income uk in 2026. Costs, comparisons, expert tips for…"
+  - "Follow the process below to budget on a low income uk: complete guide (2026)."
 ---
 
 <div class="quick-answer">

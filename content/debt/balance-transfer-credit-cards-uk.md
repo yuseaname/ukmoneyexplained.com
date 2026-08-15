@@ -1,4 +1,5 @@
 ---
+format: explainer
 title: "Balance Transfer Credit Cards UK: Ultimate Debt Management Guide"
 description: "Clear credit card debt faster with the best balance transfer cards in the UK. Compare 0% offers, fees and strategies to minimise interest charges."
 slug: "balance-transfer-credit-cards-uk"
@@ -12,7 +13,8 @@ keywords:
   - "transfer"
   - "cards"
   - "UK"
-image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
+quick_answer:
+  - "Clear credit card debt faster with the best balance transfer cards in the UK. Compare 0% offers, fees and strategies to minimise interest charges."
 ---
 
 # Mastering Debt Management: The Ultimate Guide to Balance Transfer Credit Cards in the UK

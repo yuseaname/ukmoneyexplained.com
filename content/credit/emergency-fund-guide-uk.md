@@ -5,7 +5,9 @@ date: 2026-04-17
 draft: false
 tags: ["savings", "emergency fund", "budgeting", "UK finance"]
 categories: ["credit"]
-image: "/images/how-to-budget-on-a-low-income-uk/how-to-budget-on-a-low-income-uk_hero_00001_.png"
+format: explainer
+quick_answer:
+  - "Learn how to build an emergency fund in the UK. Calculate how much you need, find the best accounts,…"
 ---
 
 # Emergency Fund Guide UK: How Much to Save and Where to Keep It
@@ -155,6 +157,11 @@ This is a debated topic. However, most financial experts in the UK suggest a com
 
 **5. What if I lose my job and my savings run out?**
 If your emergency fund is exhausted and you are still unemployed, you may need to look into government support. Check eligibility for Universal Credit on the GOV.UK website. Additionally, contact your mortgage lender or landlord immediately to discuss payment holidays or deferrals; they are often more willing to help if you communicate early.
+
+## Sources and Further Reading
+
+- [MoneyHelper — Emergency savings](https://www.moneyhelper.org.uk/en/everyday-money/savings/how-to-build-an-emergency-fund)
+- See also: [Best savings accounts UK](/best-savings-accounts-uk/) and [Budgeting on a low income](/how-to-budget-on-a-low-income-uk/)
 
 ## Conclusion
 

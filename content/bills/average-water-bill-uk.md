@@ -1,7 +1,10 @@
 ---
 title: "Average Water Bill UK"
 description: "average water bill UK — explained in plain English. Learn how average water bill uk with clear examples, tables, and FAQs."
-image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00002_.png"
+format: data-study
+quick_answer:
+  - "average water bill UK — explained in plain English. Learn how average water bill uk with clear examp…"
+  - "Figures are updated regularly; check the review date below."
 ---
 
 # Average Water Bill UK  

@@ -2,10 +2,15 @@
 title: "Council Tax Bands Explained: Check Your Band and Save Money"
 description: "Understand council tax bands in England, Scotland and Wales. Learn how to check your band, challenge it, and claim discounts."
 date: 2026-04-17
+lastmod: 2026-08-09
+canonical: "/council-tax-bands-explained-2026/"
 draft: false
 tags: ["council tax", "tax", "UK bills"]
 categories: ["taxes"]
-image: "/images/council-tax-bands-explained-2026/council-tax-bands-explained-2026_section-2_00001_.png"
+format: definition
+quick_answer:
+  - "Understand council tax bands in England, Scotland and Wales. Learn how to check your band, challenge…"
+  - "This guide explains the key facts, rules and exceptions."
 ---
 
 # Council Tax Bands Explained: Check Your Band and Save Money

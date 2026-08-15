@@ -1,8 +1,11 @@
 ---
+format: explainer
 title: "About UK Money Explained"
 description: "Learn about our mission to make UK finance simple and accessible. Our editorial team researches and explains money topics in plain English."
 type: "page"
 layout: "single"
+quick_answer:
+  - "Learn about our mission to make UK finance simple and accessible. Our editorial team researches and explains money topics in plain English."
 ---
 
 ## Our Mission

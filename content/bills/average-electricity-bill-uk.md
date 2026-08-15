@@ -1,7 +1,9 @@
 ---
+format: explainer
 title: "Average Electricity Bill UK"
 description: "average electricity bill UK — explained in plain English. Learn how average electricity bill uk with clear examples, tables, and FAQs."
-image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00002_.png"
+quick_answer:
+  - "average electricity bill UK — explained in plain English. Learn how average electricity bill uk with clear examples, tables, and FAQs."
 ---
 
 # Average Electricity Bill UK
@@ -114,11 +116,7 @@ Your current rates are listed on your monthly bill or the supplier's online port
 Understanding these questions helps clarify how the market operates. It empowers consumers to check their own bills against the data provided. For more information on managing household costs, you may find our guide on [understanding your energy bill](/understanding-energy-bills/) useful.
 
 
-## Related Articles
 
-- [Complete Guide for Beginners](/blog/complete-beginners-guide)
-- [Common Mistakes to Avoid](/blog/common-mistakes-guide)
-- [Tips and Best Practices](/blog/tips-best-practices)
 
 ## Conclusion
 

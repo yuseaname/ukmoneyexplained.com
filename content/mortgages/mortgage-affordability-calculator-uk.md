@@ -1,26 +1,78 @@
 ---
-title: "Mortgage Affordability Calculator UK"
-description: "mortgage affordability UK — explained in plain English. Learn how mortgage affordability calculator uk with clear examples, tables, and FAQs."
-image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00001_.png"
+title: "Mortgage Affordability Calculator UK 2026"
+description: "How much can you borrow for a mortgage? Enter your income, deposit and outgoings to see your maximum mortgage, monthly payments and loan-to-value ratio."
+date: 2026-04-17
+lastmod: 2026-08-09
+draft: false
+format: calculator
+tags: ["mortgage", "calculator", "affordability", "uk-property"]
+quick_answer:
+  - "Enter your income, partner’s income, deposit and monthly debts to estimate how much you can borrow."
+  - "UK lenders typically offer around 4–4.5 times combined gross annual income."
+  - "A larger deposit lowers your LTV and usually unlocks better interest rates."
+script: "mortgage-affordability.js"
 ---
 
-# Mortgage Affordability Calculator UK
+Find out how much you could borrow for a mortgage. Enter your details below for an instant estimate of your maximum loan, monthly payments, and deposit requirements.
 
-## Quick Answer  
-A mortgage affordability calculator helps you estimate how much a lender might offer based on your income and expenses. Understanding **mortgage affordability UK** standards is key to planning your home purchase journey. Most lenders use income multiples to determine your borrowing limit. For example, if you earn £30,000 annually, a lender using a 4.5x income multiple might suggest you could borrow up to £135,000. However, this is just a starting point—lenders also factor in your expenses, credit history, and other financial commitments. Using an online calculator allows you to input your specific details, such as monthly bills, savings, and debt, to get a clearer picture of what you can afford. It’s a practical tool for setting realistic expectations, especially in competitive markets where overestimating your budget could lead to disappointment. For instance, if the calculator shows you can only afford a £200,000 mortgage, but you’re eyeing a £250,000 property, you’ll know to focus your search on more affordable options. Additionally, calculators often highlight areas where you can improve your affordability, like reducing credit card debt or increasing your deposit. This proactive approach can save time and stress during the home-buying process.
+{{< calculator script="mortgage-affordability.js" >}}
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+    <div>
+      <label for="mc-income" class="block text-sm font-medium text-ukm-slate mb-1.5">Your annual income (before tax) (£)</label>
+      <input type="number" id="mc-income" value="40000" min="0" step="1000" data-default="40000" class="ukm-input w-full text-base font-mono">
+    </div>
+    <div>
+      <label for="mc-income2" class="block text-sm font-medium text-ukm-slate mb-1.5">Partner's income (optional) (£)</label>
+      <input type="number" id="mc-income2" value="0" min="0" step="1000" data-default="0" class="ukm-input w-full text-base font-mono">
+    </div>
+    <div>
+      <label for="mc-deposit" class="block text-sm font-medium text-ukm-slate mb-1.5">Deposit (£)</label>
+      <input type="number" id="mc-deposit" value="25000" min="0" step="1000" data-default="25000" class="ukm-input w-full text-base font-mono">
+    </div>
+    <div>
+      <label for="mc-debts" class="block text-sm font-medium text-ukm-slate mb-1.5">Monthly debt payments (£)</label>
+      <input type="number" id="mc-debts" value="0" min="0" step="50" data-default="0" class="ukm-input w-full text-base font-mono">
+    </div>
+  </div>
+  
+  <button type="button" id="mc-reset" class="mt-6 ukm-btn ukm-btn-secondary ukm-focus w-full sm:w-auto">Start again</button>
+  
+  <div id="mc-results" class="mt-6"></div>
+  
+  <div class="mt-6 p-4 bg-ukm-parchment rounded-md text-sm text-ukm-slate">
+    <p class="font-medium text-ukm-ink mb-1">How this is calculated</p>
+    <p>Estimates maximum borrowing at 4.5x combined gross income, reduced by half of annual debt repayments. Monthly payment estimates assume a 25-year term and illustrative rates of 4.5%, 5.0% and 5.5%. Actual lender offers depend on full affordability checks, credit history and stress testing.</p>
+  </div>
+{{< /calculator >}}
 
-## What Is Mortgage Affordability?  
-Mortgage affordability is the process lenders use to decide how much money they are willing to lend you for a property. It is not just about how much you earn, but also about how much you spend each month. When you search for **mortgage affordability UK** information, you are looking to understand the balance between your income and your outgoings. Lenders need to be sure you can repay the loan even if interest rates rise or your financial situation changes. For example, if you earn £40,000 a year but have £1,000 in monthly debt repayments, your disposable income is significantly lower than someone with the same salary but no debt. This means your borrowing capacity will be smaller.  
+## How Mortgage Affordability Works
 
-This assessment protects both the borrower and the lender. It ensures you do not take on a debt that becomes unmanageable. In the UK, this is regulated by the Financial Conduct Authority (FCA). Since 2014, the FCA has required lenders to perform strict affordability checks, including stress testing your ability to repay the mortgage if interest rates increase. They look at your salary, your savings, your credit history, and your monthly bills. For instance, a lender might check if you could afford repayments at a rate 2% higher than your current mortgage rate, simulating a potential market shift.  
+UK lenders typically offer **4–4.5 times your gross annual income** as a maximum mortgage amount. For joint applications, most lenders use 4x–4.5x combined income.
 
-Affordability is different from the price of the house you want. You might find a property you love, but if the lender says you cannot afford the monthly repayments, the deal will not go ahead. Therefore, knowing your limits early helps you focus on properties within your budget. It also helps you avoid the disappointment of having an offer rejected later in the process. A practical tip is to create a detailed budget using a spreadsheet or app, tracking all your monthly expenses, including utilities, subscriptions, and even regular savings contributions. This exercise can reveal areas where you might cut costs to improve affordability. By understanding these rules, you can prepare your finances before you apply. For example, paying off high-interest debt or building up an emergency fund can strengthen your application. This preparation often leads to a smoother application process. Now that you understand the concept, let us look at the mechanics of how lenders calculate this figure.
+Lenders also conduct a detailed **affordability assessment** that considers:
 
-## How Mortgage Affordability UK Works  
-Lenders in the UK follow a strict process to assess your borrowing power. This process is designed to be thorough and fair. When you use a **mortgage affordability UK** tool or speak to a broker, they are mirroring the steps a lender will take. The goal is to create a clear picture of your financial health.  
+- Your monthly income (including bonuses, overtime, benefits)
+- All monthly outgoings (bills, debts, childcare, living costs)
+- Your credit score and history
+- The property's value and condition
+- Stress testing against higher interest rates
 
-First, the lender verifies your income. They do not just take your word for it. They ask for payslips, tax returns, or bank statements. For employed people, this is usually the last three months of payslips. For self-employed individuals, they look at accounts from the last two or three years. This ensures the income is stable and likely to continue. For example, a self-employed graphic designer with inconsistent income might have their borrowing limit reduced if their earnings varied significantly year to year. A practical tip is to keep detailed records of your income, especially if you’re self-employed or have side gigs, to demonstrate a reliable income stream.  
+### LTV (Loan-to-Value) Explained
 
-Second, they assess your expenditure. This includes your essential bills like rent, utilities, and food. It also includes discretionary spending like holidays, subscriptions, and dining out. Lenders often use a tool called a credit report to see your spending habits. They want to know how much money is left over after you pay your bills. This is sometimes called your disposable income. For instance, if you earn £3,000 a month but spend £2,500 on rent, utilities, and groceries, your disposable income is £500. Lenders will consider this when calculating your mortgage repayment capacity. A key tip is to reduce non-essential expenses, such as streaming services or frequent takeaways, to improve your affordability score.  
+| Deposit | LTV | Impact |
+|---------|-----|--------|
+| 5% | 95% | Highest rates, limited lenders |
+| 10% | 90% | Better rates, most first-time buyers |
+| 15% | 85% | Good rates, wider choice |
+| 20%+ | 80% | Best rates, lowest costs |
 
-Third, they apply a stress test. This is a crucial part of the UK system. The stress test simulates a scenario where interest rates rise, ensuring you can still afford your mortgage. For example, if you apply for a mortgage at a 3% interest rate, the lender might test your ability to repay at 6% or 7%. This ensures you’re prepared for potential economic fluctuations. Another example is a borrower with a fixed-rate mortgage: the stress test might assume a rate hike after the fixed period ends. A practical tip is to factor in future financial changes, such as a potential salary increase or a new job, to strengthen your application. By understanding how these steps work, you can better prepare your finances and make informed decisions when entering the property market.
+A lower LTV means you have more equity in the property, which lenders reward with better interest rates. Read our guide on [how much deposit you need](/how-much-deposit-for-a-house-uk/) for more detail.
+
+## Next Steps
+
+- Read our [first-time buyer guide](/first-time-buyer-guide-uk/) for a complete walkthrough
+- Check your [credit score](/how-to-increase-credit-score-uk/) before applying
+- Compare [fixed vs tracker mortgages](/fixed-vs-tracker-mortgage-uk/)
+- Learn [how mortgages work](/how-mortgages-work-uk/) in the UK
+
+> **Disclaimer:** This calculator provides an estimate only. Actual lending decisions depend on a full affordability assessment by the lender. Speak to an FCA-registered mortgage advisor via [Unbiased.co.uk](https://www.unbiased.co.uk) for personalised advice.

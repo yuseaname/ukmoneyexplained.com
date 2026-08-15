@@ -1,8 +1,13 @@
 ---
 title: "What Is a Credit Score UK"
 description: "what is a credit score UK — explained in plain English. Learn how what is a credit score uk with clear examples, tables, and FAQs."
-image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
+format: definition
+quick_answer:
+  - "what is a credit score UK — explained in plain English. Learn how what is a credit score uk with cle…"
+  - "This guide explains the key facts, rules and exceptions."
 ---
+
+> **Quick answer:** A credit score is a number (typically 0–999 for Experian, 0–1000 for Equifax, 0–710 for TransUnion) that represents how reliable you are at repaying borrowed money. Lenders use it to decide whether to approve you for mortgages, loans, and credit cards, and what interest rate to offer. A higher score means better deals. You can check all three for free via ClearScore, Experian, and Credit Karma.
 
 **What Is a Credit Score?**  
 A credit score is a numerical representation of your creditworthiness, calculated based on your financial history and habits. In the UK, credit scores are used by lenders—such as banks, credit card companies, and mortgage providers—to assess the likelihood that you’ll repay borrowed money on time. A higher credit score generally indicates lower risk for lenders, making it easier to qualify for loans, credit cards, and favorable interest rates. Conversely, a lower score may result in higher interest rates, loan rejections, or the need for a guarantor.  
@@ -59,6 +64,16 @@ Enhancing your credit score requires consistent, responsible financial habits. H
 
 By following these steps and maintaining good financial habits, you can gradually improve your credit score. Remember, building credit is a long-term process, and small, consistent actions—like paying bills on time and reducing debt—can lead to significant improvements over time.
 
+## How to Check Your Credit Score for Free
+
+You can check your credit score free from all three UK credit reference agencies:
+
+- **Experian**: Free via [Experian](https://www.experian.co.uk/consumer/free-credit-score.html) (0-999 scale)
+- **Equifax**: Free via [ClearScore](https://www.clearscore.com) (0-1000 scale)
+- **TransUnion**: Free via [Credit Karma](https://www.creditkarma.co.uk) (0-710 scale)
+
+For the full step-by-step process, see our guide on [how to check your credit score free](/check-credit-score-free-uk/). To improve your score, read our [7-step guide to increasing your credit score](/how-to-increase-credit-score-uk/).
+
 ## What Most People Miss  
 Most guides overlook how public records like County Court Judgments (CCJs) or bankruptcies linger far longer than you might expect. A CCJ, for instance, stays on your report for six years from the date it’s issued—not just the repayment period—so even if you settle it early, it still impacts your score.  
 
@@ -86,11 +101,7 @@ Yes, you can check your credit score for free in the UK through services like Ex
 To improve your UK credit score, pay bills on time, reduce outstanding debt, avoid frequent credit applications, and maintain a mix of credit types. Regularly checking your credit report for errors and addressing inaccuracies can also help boost your score.
 
 
-## Related Articles
 
-- [Complete Guide for Beginners](/blog/complete-beginners-guide)
-- [Common Mistakes to Avoid](/blog/common-mistakes-guide)
-- [Tips and Best Practices](/blog/tips-best-practices)
 
 ## Conclusion  
 A credit score in the UK is a numerical representation of your financial reliability, influencing loan approvals, mortgage rates, and even job opportunities. Key points to remember:  

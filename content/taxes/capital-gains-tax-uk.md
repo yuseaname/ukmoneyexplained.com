@@ -12,7 +12,10 @@ keywords:
   - "Gains"
   - "Tax"
   - "UK"
-image: "/images/best-cashback-credit-cards-uk/best-cashback-credit-cards-uk_hero_00001_.png"
+format: definition
+quick_answer:
+  - "Understand Capital Gains Tax rates, allowances and exemptions in the UK. Learn how to calculate and …"
+  - "This guide explains the key facts, rules and exceptions."
 ---
 
 # A Complete Guide to Capital Gains Tax UK: Managing Your Assets and Tax Liabilities
@@ -164,6 +167,12 @@ For most other types of capital gains, you will need to report them via a Self A
 HMRC is rigorous when it comes to late filings and late payments. Penalties can be significant, often calculated as a percentage of the tax due, and can accumulate interest over time. Staying organised and using a digital calendar to track your "disposal dates" is highly recommended.
 
 ---
+
+## Sources and Further Reading
+
+- [GOV.UK — Capital Gains Tax rates and allowances](https://www.gov.uk/capital-gains-tax)
+- [GOV.UK — Work out and report your Capital Gains Tax](https://www.gov.uk/capital-gains-tax/work-out-need-to-pay)
+- See also: [Income Tax bands explained](/income-tax-bands-uk-explained/) and [ISA explained](/isa-explained-uk/)
 
 ## Conclusion: Taking Control of Your Tax Future
 

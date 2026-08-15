@@ -12,8 +12,13 @@ keywords:
   - "UK"
   - "explained"
   - "Individual"
-image: "/images/best-cashback-credit-cards-uk/best-cashback-credit-cards-uk_hero_00001_.png"
+format: definition
+quick_answer:
+  - "Understand ISAs inside out. Compare Cash ISAs, Stocks & Shares ISAs and Lifetime ISAs to make the mo…"
+  - "This guide explains the key facts, rules and exceptions."
 ---
+
+> **Quick answer:** An ISA (Individual Savings Account) lets you save or invest up to £20,000 per tax year completely tax-free. The main types are Cash ISAs, Stocks & Shares ISAs, and Lifetime ISAs (with a 25% government bonus on up to £4,000/year). Source: [GOV.UK — ISAs](https://www.gov.uk/individual-savings-accounts).
 
 # ISA Explained UK: The Complete Guide to Tax-Funded Savings and Investing
 
@@ -143,6 +148,12 @@ Before you make your next move, run through this quick checklist:
 *   [ ] **Assess your goal:** Does your ISA type match your timeline (Short-term = Cash; Long-term = Stocks & Shares)?
 *   [ ] **Check for penalties:** If using a LISA, are you certain you won't need the money for something other than a house or retirement?
 *   [ ] **Review the cost:** Are your platform and management fees competitive?
+
+## Sources and Further Reading
+
+- [GOV.UK — Cash ISAs](https://www.gov.uk/individual-savings-accounts)
+- [GOV.UK — Lifetime ISA](https://www.gov.uk/lifetime-isa)
+- See also: [Capital Gains Tax](/capital-gains-tax-uk/) and [Income Tax bands](/income-tax-bands-uk-explained/)
 
 ## Conclusion: Take Control of Your Financial Future
 

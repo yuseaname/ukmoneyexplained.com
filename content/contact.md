@@ -1,8 +1,11 @@
 ---
+format: explainer
 title: "Contact Us"
 description: "Get in touch with the UK Money Explained team. Report errors, suggest topics, or ask questions about our content."
 type: "page"
 layout: "single"
+quick_answer:
+  - "Get in touch with the UK Money Explained team. Report errors, suggest topics, or ask questions about our content."
 ---
 
 ## Get in Touch

@@ -1,10 +1,14 @@
 ---
 title: "How Mortgages Work UK"
 description: "how mortgages work UK — explained in plain English. Learn how how mortgages work uk with clear examples, tables, and FAQs."
-image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00001_.png"
+format: explainer
+quick_answer:
+  - "how mortgages work UK — explained in plain English. Learn how how mortgages work uk with clear examp…"
 ---
 
 **What is a Mortgage?**  
+> **Quick answer:** A mortgage is a loan secured against a property. You repay it monthly over 25-35 years with interest. Your deposit (typically 5-20% of the price) determines your loan-to-value (LTV), which affects your interest rate. If you stop paying, the lender can repossess. Source: [FCA — Mortgages](https://www.fca.org.uk/consumers/mortgages).
+
 A mortgage is a long-term loan secured against a property, enabling individuals to purchase a home without paying the full price upfront. In the UK, the lender (typically a bank, building society, or online mortgage provider) lends the majority of the property’s value, and the borrower agrees to repay the loan over a set period, usually 25–30 years. The property itself acts as collateral, meaning the lender can repossess it if repayments are not made. Mortgages are a cornerstone of UK home ownership, with over 80% of households relying on them to finance their homes.  
 
 The size of the deposit you can provide significantly impacts the mortgage terms. A larger deposit reduces the loan-to-value (LTV) ratio, which is the percentage of the property’s value you’re borrowing. For example, if you buy a £300,000 property with a 10% deposit (£30,000), your LTV is 90%, whereas a 20% deposit (£60,000) lowers it to 80%. Lower LTV ratios typically qualify for better interest rates, as they reduce the lender’s risk. Additionally, mortgages with LTVs over 80% often require mortgage indemnity insurance (MPI), which protects the lender if the borrower defaults.  
@@ -82,11 +86,13 @@ Mortgage rates depend on the Bank of England’s base rate, lender competition, 
 Fixed-rate mortgages lock in a set interest rate for a term (e.g., 2–10 years), providing predictable payments. Variable rates fluctuate with the lender’s standard rate or the Bank of England base rate, offering potential savings but with the risk of higher monthly costs.
 
 
-## Related Articles
 
-- [Complete Guide for Beginners](/blog/complete-beginners-guide)
-- [Common Mistakes to Avoid](/blog/common-mistakes-guide)
-- [Tips and Best Practices](/blog/tips-best-practices)
+
+## Sources and Further Reading
+
+- [FCA — Mortgage regulation explained](https://www.fca.org.uk/consumers/mortgages)
+- [GOV.UK — Help to Buy and home ownership schemes](https://www.gov.uk/affordable-home-ownership-schemes)
+- See also: [How much deposit do you need?](/how-much-deposit-for-a-house-uk/) and [Fixed vs tracker mortgages](/fixed-vs-tracker-mortgage-uk/)
 
 ## Conclusion  
 Understanding how mortgages work in the UK involves key concepts:  

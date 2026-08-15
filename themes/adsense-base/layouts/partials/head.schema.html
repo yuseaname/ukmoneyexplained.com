@@ -50,14 +50,7 @@
   {{- with .Date -}}
     {{- $article = dict "datePublished" (.Format "2006-01-02T15:04:05-07:00") | merge $article -}}
   {{- end -}}
-  {{- $modDate := .Params.updated | default .Lastmod -}}
-  {{- with $modDate -}}
-    {{- if reflect.IsMap . -}}
-      {{- $article = dict "dateModified" (.Format "2006-01-02T15:04:05-07:00") | merge $article -}}
-    {{- else -}}
-      {{- $article = dict "dateModified" (printf "%s" .) | merge $article -}}
-    {{- end -}}
-  {{- end -}}
+  {{- with .Params.updated -}}{{- $article = dict "dateModified" . | merge $article -}}{{- else -}}{{- with .Lastmod -}}{{- $article = dict "dateModified" (.Format "2006-01-02T15:04:05Z07:00") | merge $article -}}{{- end -}}{{- end -}}
   {{- $schemas = $schemas | append $article -}}
 {{- end -}}
 
@@ -118,6 +111,6 @@
 {{/* ── Output combined JSON-LD ── */}}
 {{- if gt (len $schemas) 0 -}}
 <script type="application/ld+json">
-{{- $schemas | jsonify -}}
+{{- $schemas | jsonify | safeJS -}}
 </script>
 {{- end -}}

@@ -1,7 +1,9 @@
 ---
 title: "What Affects Your Credit Score UK"
 description: "what affects credit score UK — explained in plain English. Learn how what affects your credit score uk with clear examples, tables, and FAQs."
-image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
+format: explainer
+quick_answer:
+  - "what affects credit score UK — explained in plain English. Learn how what affects your credit score …"
 ---
 
 # What Affects Your Credit Score UK  
@@ -75,6 +77,12 @@ A longer credit history demonstrates financial responsibility, positively influe
 
 ### How long do negative entries stay on my UK credit report?  
 Most negative entries, like missed payments or CCJs, remain on your UK credit report for six years. After this period, they’re automatically removed, which can help improve your score over time.
+
+## Related Guides
+
+- [How to increase your credit score](/how-to-increase-credit-score-uk/) — 7 proven steps
+- [How to check your credit score free](/check-credit-score-free-uk/) — all three CRAs
+- [How to dispute a credit report error](/dispute-credit-report-error-uk/) — step by step
 
 ## Conclusion  
 Your credit score in the UK is shaped by several key factors: **payment history** (late or missed payments significantly lower scores), **credit utilization** (keeping balances below 30% of your limit is ideal), and **length of credit history** (longer histories build trust). Additionally, **checking for errors** on your credit report and avoiding frequent new credit applications are crucial.  

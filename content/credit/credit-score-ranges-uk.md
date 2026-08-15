@@ -1,7 +1,10 @@
 ---
 title: "Credit Score Ranges UK"
 description: "credit score ranges UK — explained in plain English. Learn how credit score ranges uk with clear examples, tables, and FAQs."
-image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
+format: data-study
+quick_answer:
+  - "credit score ranges UK — explained in plain English. Learn how credit score ranges uk with clear exa…"
+  - "Figures are updated regularly; check the review date below."
 ---
 
 # Credit Score Ranges UK

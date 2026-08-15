@@ -8,7 +8,7 @@ theme = 'adsense-base'
   description = "Clear, jargon-free explanations of UK finance topics — credit scores, mortgages, taxes, bills, and more."
   tagline = "Simple explanations of money, bills, taxes, and finance in the UK."
   author = "UK Money Explained"
-  favicon = '/images/og-default.png'
+  favicon = '/favicon.svg'
   og_image = '/images/og-default.png'
   google_site_verification = ''
 

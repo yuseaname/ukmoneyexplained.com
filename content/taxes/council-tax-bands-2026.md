@@ -3,6 +3,8 @@ title: "Council tax bands: Complete Guide (2026)"
 description: "Learn everything about council tax bands in 2026. Costs, comparisons, expert tips for US homeowners."
 slug: "council-tax-bands-2026"
 date: 2026-05-29
+lastmod: 2026-08-09
+canonical: "/council-tax-bands-explained-2026/"
 draft: false
 author: "UK Money Explained"
 section: "taxes"
@@ -13,6 +15,9 @@ keywords:
   - "council tax discounts single person"
   - "council tax exemption criteria"
 image: "/images/council-tax-bands-2026/council-tax-bands-2026_section-2_00002_.png"
+format: explainer
+quick_answer:
+  - "Learn everything about council tax bands in 2026. Costs, comparisons, expert tips for US homeowners."
 ---
 
 <p>Living costs in the United Kingdom continue to present challenges for households across all income brackets. As we move into 2026, the financial landscape is shaped by inflationary pressures and the enduring impact of the Bank of England base rate on mortgages and savings. For many homeowners and tenants, council tax represents one of the largest unavoidable fixed costs, yet it is often misunderstood. Many residents pay the standard rate without realising they may be eligible for reductions, discounts, or that their property band might be incorrect. Navigating this system effectively can save hundreds of pounds annually, freeing up income for essential spending or savings.</p>

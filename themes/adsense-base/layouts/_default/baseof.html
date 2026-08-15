@@ -3,7 +3,7 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="min-h-screen flex flex-col {{ if eq .Site.Language.Lang "es" }}font-sans{{ else }}font-sans{{ end }}">
+<body class="min-h-screen flex flex-col font-body bg-ukm-parchment text-ukm-ink">
 
   <!-- Skip to content (accessibility) -->
   <a href="#main-content" class="skip-to-content">Skip to content</a>
@@ -41,24 +41,6 @@
   <!-- Footer -->
   {{ partial "footer.html" . }}
 
-  <!-- Mobile menu toggle JS -->
-  <script>
-    (function() {
-      var toggle = document.getElementById('nav-toggle');
-      var menu = document.getElementById('mobile-menu');
-      var hamburger = document.getElementById('hamburger-icon');
-      var closeIcon = document.getElementById('close-icon');
-      if (toggle && menu) {
-        toggle.addEventListener('click', function() {
-          var expanded = toggle.getAttribute('aria-expanded') === 'true' ? false : true;
-          toggle.setAttribute('aria-expanded', expanded);
-          menu.classList.toggle('hidden');
-          if (hamburger) hamburger.classList.toggle('hidden');
-          if (closeIcon) closeIcon.classList.toggle('hidden');
-        });
-      }
-    })();
-  </script>
 
   {{/* Minimal JS bundle */}}
   {{ with resources.Get "js/main.js" }}

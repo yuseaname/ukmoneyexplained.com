@@ -12,7 +12,10 @@ keywords:
   - "Credit"
   - "UK"
   - "benefits"
-image: "/images/how-to-increase-credit-score-uk/how-to-increase-credit-score-uk_hero_00001_.png"
+format: definition
+quick_answer:
+  - "Navigate Universal Credit with confidence. Understand eligibility, payments, allowances and how to m…"
+  - "This guide explains the key facts, rules and exceptions."
 ---
 
 # Universal Credit Explained: A Complete Guide to Navigating the UK Benefit System
@@ -172,6 +175,13 @@ If you are working variable hours, your income will fluctuate. Instead of budget
 Keep digital copies of all your payslips, rent statements, and correspondence with the DWP. If there is ever a dispute regarding your calculation or a "miscalculation" occurs, having an organised record will make the appeals process much smoother.
 
 ---
+
+## Sources and Further Reading
+
+- [GOV.UK — Universal Credit](https://www.gov.uk/universal-credit)
+- [GOV.UK — Universal Credit eligibility](https://www.gov.uk/universal-credit/eligibility)
+- Citizens Advice: [Help with Universal Credit](https://www.citizensadvice.org.uk/benefits/universal-credit/)
+- See also: [National Insurance explained](/national-insurance-explained/) and [Budgeting on a low income](/how-to-budget-on-a-low-income-uk/)
 
 ## Conclusion: Staying Informed and Prepared
 

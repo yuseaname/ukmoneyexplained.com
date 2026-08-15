@@ -3,6 +3,9 @@ title: "Editorial Policy"
 description: "How UK Money Explained researches, writes, fact-checks, and updates its finance content. Our commitment to accuracy and transparency."
 type: "page"
 layout: "single"
+format: explainer
+quick_answer:
+  - "How UK Money Explained researches, writes, fact-checks, and updates its finance content. Our commitm…"
 ---
 
 ## Our Commitment to Accuracy

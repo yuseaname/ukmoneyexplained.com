@@ -1,7 +1,10 @@
 ---
 title: "What Is APR Interest Rate Explained"
 description: "what is APR interest rate — explained in plain English. Learn how what is apr interest rate explained with clear examples, tables, and FAQs."
-image: "/images/best-cashback-credit-cards-uk-2026/best-cashback-credit-cards-uk-2026_hero_00002_.png"
+format: definition
+quick_answer:
+  - "what is APR interest rate — explained in plain English. Learn how what is apr interest rate explaine…"
+  - "This guide explains the key facts, rules and exceptions."
 ---
 
 # What Is APR Interest Rate Explained In The UK
