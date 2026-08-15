@@ -2,6 +2,7 @@ baseURL = 'https://ukmoneyexplained.com/'
 languageCode = 'en-gb'
 title = 'UK Money Explained'
 theme = 'adsense-base'
+disableKinds = ['taxonomy', 'term']
 
 [params]
   site_name = 'UK Money Explained'
