@@ -1,0 +1,39 @@
+<nav class="sticky top-0 z-50 bg-ukm-parchment/95 backdrop-blur-sm border-b border-ukm-ruler ukm-rule" id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="{{ "/" | relURL }}" class="font-display font-bold text-xl tracking-tight text-ukm-ink hover:text-ukm-authority transition-colors ukm-focus" aria-label="ukmoneyexplained.com home">
+        <span class="font-heading italic">UK</span>Money<span class="text-ukm-authority">.</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-1">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          {{ $isActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+          <a href="{{ .URL }}" class="px-3 py-2 text-sm font-medium rounded-md ukm-focus {{ if $isActive }}text-ukm-authority border-b-2 border-ukm-authority{{ else }}text-ukm-slate hover:text-ukm-ink hover:bg-ukm-paper/60{{ end }}" {{ if $isActive }}aria-current="page"{{ end }}>
+            {{ .Name }}
+          </a>
+        {{ end }}
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button type="button" class="md:hidden p-2 rounded-md text-ukm-slate hover:text-ukm-ink hover:bg-ukm-paper/60 ukm-focus" id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Panel -->
+  <div class="md:hidden hidden border-t border-ukm-ruler bg-ukm-paper" id="mobile-menu" role="region" aria-label="Mobile navigation">
+    <div class="px-4 py-3 space-y-1">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ $isActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+        <a href="{{ .URL }}" class="block px-3 py-2.5 rounded-md text-base font-medium ukm-focus {{ if $isActive }}bg-ukm-parchment text-ukm-authority font-semibold{{ else }}text-ukm-slate hover:text-ukm-ink hover:bg-ukm-parchment{{ end }}" {{ if $isActive }}aria-current="page"{{ end }}>
+          {{ .Name }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</nav>

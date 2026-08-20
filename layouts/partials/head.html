@@ -1,32 +1,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{{/* Noindex thin tag taxonomy pages (keep category pages indexable) */}}
-{{- if and (or (eq .Kind "term") (eq .Kind "taxonomy")) (eq .Data.Singular "tag") -}}
-<meta name="robots" content="noindex, follow">
-{{- end -}}
-
-{{/* Google Fonts: Inter (body) + Space Grotesk (display) */}}
+{{/* Google Fonts: Fraunces (headings), Saira (display), Inter (body), JetBrains Mono (data) */}}
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap"></noscript>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Saira:wght@600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Saira:wght@600;700&display=swap"></noscript>
 
 {{/* Tailwind CSS — compiled locally, no CDN */}}
 <link rel="stylesheet" href="/css/tailwind.css">
-
-{{/* Google Analytics (gtag.js) */}}
-{{- partial "google-analytics.html" . -}}
 
 {{/* Design System CSS via Hugo Pipes */}}
 {{ with resources.Get "css/design-system.css" | resources.Minify | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
 
+{{/* UK Money site-specific overrides */}}
+{{ with resources.Get "css/ukmoney.css" | resources.Minify | resources.Fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
 {{/* Primary meta tags */}}
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ with .Site.Title }} | {{ . }}{{ end }}{{ end }}</title>
-{{- $pageDesc := .Params.description | default .Site.Params.description -}}
-{{- with $pageDesc -}}
+<title>{{ .Title }}{{ with .Site.Title }} | {{ . }}{{ end }}</title>
+{{- with .Params.description -}}
 <meta name="description" content="{{ truncate 155 . }}">
 {{- end -}}
 {{- with .Params.author -}}
@@ -37,25 +33,21 @@
 {{- end -}}
 <link rel="canonical" href="{{ .Params.canonical | default .Permalink }}">
 
-{{/* Favicon — SVG meter mark primary, PNG fallback */}}
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-<link rel="icon" href="{{ .Site.Params.favicon }}" sizes="any">
-<link rel="apple-touch-icon" href="{{ .Site.Params.favicon }}">
-<meta name="theme-color" content="#0e201c">
+{{/* Favicon */}}
+{{- with .Site.Params.favicon -}}
+<link rel="icon" href="{{ . }}">
+{{- end -}}
 
 {{/* Open Graph */}}
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:title" content="{{ .Title }}">
-{{- $pageDesc := .Params.description | default .Site.Params.description -}}
-{{- with $pageDesc -}}
+{{- with .Params.description -}}
 <meta property="og:description" content="{{ truncate 155 . }}">
 {{- end -}}
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-{{- $shareImg := .Params.image | default .Site.Params.og_image -}}
-{{- if and $shareImg (strings.HasSuffix $shareImg ".svg") -}}{{- $shareImg = replace $shareImg ".svg" ".png" -}}{{- end -}}
-{{- with $shareImg -}}
-<meta property="og:image" content="{{ . | absURL }}">
+{{- with .Params.image -}}
+<meta property="og:image" content="{{ . }}">
 {{- end -}}
 {{- with .Params.image_alt -}}
 <meta property="og:image:alt" content="{{ . }}">
@@ -80,12 +72,11 @@
 {{/* Twitter Card */}}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }}">
-{{- $pageDesc := .Params.description | default .Site.Params.description -}}
-{{- with $pageDesc -}}
+{{- with .Params.description -}}
 <meta name="twitter:description" content="{{ truncate 155 . }}">
 {{- end -}}
-{{- with $shareImg -}}
-<meta name="twitter:image" content="{{ . | absURL }}">
+{{- with .Params.image -}}
+<meta name="twitter:image" content="{{ . }}">
 {{- end -}}
 
 {{/* Robots */}}

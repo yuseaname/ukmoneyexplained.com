@@ -1,0 +1,27 @@
+<footer class="bg-ukm-ink text-ukm-parchment mt-16" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <a href="{{ "/" | relURL }}" class="font-display font-bold text-lg tracking-tight text-white hover:text-ukm-parchment transition-colors">
+          <span class="font-heading italic">UK</span>Money<span class="text-ukm-authority">.</span>
+        </a>
+        <p class="mt-3 text-sm text-ukm-parchment/80">Plain-English guides to UK money, tax, credit and borrowing.</p>
+      </div>
+      {{ range .Site.Menus.main }}
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wide text-white/90 mb-3">{{ .Name }}</h3>
+        <ul class="space-y-2">
+          {{ $parent := .Identifier }}
+          {{ range (where $.Site.RegularPages "Section" $parent | first 5) }}
+            <li><a href="{{ .RelPermalink }}" class="text-sm text-ukm-parchment/70 hover:text-white transition-colors ukm-focus">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+    <div class="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p class="text-xs text-ukm-parchment/60">&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+      <a href="#main-nav" class="text-xs text-ukm-parchment/60 hover:text-white ukm-focus">Back to top</a>
+    </div>
+  </div>
+</footer>

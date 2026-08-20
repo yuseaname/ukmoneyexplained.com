@@ -1,0 +1,63 @@
+{{ define "main" }}
+{{ $sectionClass := printf "section-%s" .Section }}
+
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 {{ $sectionClass }}">
+  {{ partial "breadcrumbs.html" . }}
+
+  <!-- Article Header -->
+  <header class="mb-8 ukm-rule pb-6">
+    {{ partial "hero-image.html" . }}
+
+    <div class="flex flex-wrap items-center gap-2 mb-4">
+      {{ partial "format-badge.html" . }}
+      <span class="text-sm text-ukm-muted">{{ .Date.Format "Jan 2, 2006" }}</span>
+      {{ if .Params.lastmod }}
+        <span class="text-xs text-ukm-crown font-medium bg-ukm-crown/10 px-2 py-1 rounded-full">Updated {{ .Params.lastmod.Format "Jan 2, 2006" }}</span>
+      {{ end }}
+      <span class="text-sm text-ukm-muted">{{ .ReadingTime }} min read</span>
+    </div>
+
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-ukm-ink leading-tight">{{ .Title }}</h1>
+
+    {{ with .Params.description }}
+      <p class="mt-4 text-lg sm:text-xl text-ukm-slate max-w-3xl">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-8">
+      {{ if .Params.quick_answer }}
+        {{ partial "quick-answer-inline.html" . }}
+      {{ end }}
+
+      <!-- Ad slot below title -->
+      {{ partial "adsense.html" (dict "position" "below_title" "ctx" .) }}
+
+      <!-- TOC for small screens -->
+      <div class="lg:hidden mb-6">
+        {{ partial "toc.html" . }}
+      </div>
+
+      <div class="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-ukm-ink prose-a:text-ukm-authority prose-a:no-underline hover:prose-a:underline prose-strong:text-ukm-ink">
+        {{ .Content }}
+      </div>
+
+      <!-- Article footer with review date -->
+      <footer class="mt-12 pt-6 ukm-rule text-sm text-ukm-muted">
+        <p>Reviewed {{ now.Format "Jan 2, 2006" }}</p>
+      </footer>
+    </div>
+
+    <!-- Sidebar on large screens -->
+    <aside class="hidden lg:block lg:col-span-4">
+      {{ if gt .WordCount 800 }}
+        <div class="sticky top-24 mb-10">
+          {{ partial "toc.html" . }}
+        </div>
+      {{ end }}
+
+      {{ partial "related-posts.html" . }}
+    </aside>
+  </div>
+</article>
+{{ end }}

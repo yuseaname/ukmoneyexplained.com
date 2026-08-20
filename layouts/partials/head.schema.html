@@ -3,26 +3,21 @@
 
 {{/* ── WebSite schema (homepage only) ── */}}
 {{- if .IsHome -}}
-  {{- $org := dict
-      "@context" "https://schema.org"
-      "@type" "Organization"
-      "name" "Utility Explained"
-      "url" "https://utilityexplained.com/"
-  -}}
-  {{- $org = dict "logo" "https://utilityexplained.com/images/og-default.png" | merge $org -}}
-  {{- $searchAction := dict
-      "@type" "SearchAction"
-      "target" "https://utilityexplained.com/search/?q={search_term_string}"
-      "query-input" "required name=search_term_string"
-  -}}
   {{- $ws := dict
       "@context" "https://schema.org"
       "@type" "WebSite"
-      "name" "Utility Explained"
-      "url" "https://utilityexplained.com/"
-      "potentialAction" $searchAction
+      "name" .Site.Title
+      "url" .Site.BaseURL
   -}}
-  {{- $schemas = $schemas | append $org -}}
+  {{- with .Site.Params.description -}}
+    {{- $ws = dict "description" . | merge $ws -}}
+  {{- end -}}
+  {{- $pub := dict
+      "@type" "Organization"
+      "name" (or .Site.Params.org_name .Site.Title)
+      "url" .Site.BaseURL
+  -}}
+  {{- $ws = dict "publisher" $pub | merge $ws -}}
   {{- $schemas = $schemas | append $ws -}}
 {{- end -}}
 
@@ -55,22 +50,7 @@
   {{- with .Date -}}
     {{- $article = dict "datePublished" (.Format "2006-01-02T15:04:05-07:00") | merge $article -}}
   {{- end -}}
-  {{- with .Params.updated -}}
-    {{- $article = dict "dateModified" . | merge $article -}}
-  {{- else -}}
-    {{- with .Lastmod -}}
-      {{- $article = dict "dateModified" (.Format "2006-01-02T15:04:05Z07:00") | merge $article -}}
-    {{- end -}}
-  {{- end -}}
-  {{- with .WordCount -}}
-    {{- $article = dict "wordCount" . | merge $article -}}
-  {{- end -}}
-  {{- with .Params.keywords -}}
-    {{- $article = dict "keywords" (delimit . ", ") | merge $article -}}
-  {{- end -}}
-  {{- with .Params.categories -}}
-    {{- $article = dict "articleSection" (delimit . ", ") | merge $article -}}
-  {{- end -}}
+  {{- with .Params.updated -}}{{- $article = dict "dateModified" . | merge $article -}}{{- else -}}{{- with .Lastmod -}}{{- $article = dict "dateModified" (.Format "2006-01-02T15:04:05Z07:00") | merge $article -}}{{- end -}}{{- end -}}
   {{- $schemas = $schemas | append $article -}}
 {{- end -}}
 
@@ -128,31 +108,7 @@
   {{- end -}}
 {{- end -}}
 
-
-{{/* ── HowTo schema (if howto shortcodes were used) ── */}}
-{{- with .Store.Get "howtoSteps" -}}
-  {{- if gt (len .) 0 -}}
-    {{- $steps := slice -}}
-    {{- range $i, $step := . -}}
-      {{- $steps = $steps | append (dict
-          "@type" "HowToStep"
-          "name" $step.name
-          "text" $step.text
-      ) -}}
-    {{- end -}}
-    {{- $howtoSchema := dict
-        "@context" "https://schema.org"
-        "@type" "HowTo"
-        "name" ($.Store.Get "howtoTitle")
-        "step" $steps
-    -}}
-    {{- $schemas = $schemas | append $howtoSchema -}}
-  {{- end -}}
-{{- end -}}
-
 {{/* ── Output combined JSON-LD ── */}}
-{{- /* safeJS is required: script content is a JS context — safeHTML still gets
-       JS-escaped there, double-encoding the JSON into an unparseable string. */ -}}
 {{- if gt (len $schemas) 0 -}}
 <script type="application/ld+json">
 {{- $schemas | jsonify | safeJS -}}

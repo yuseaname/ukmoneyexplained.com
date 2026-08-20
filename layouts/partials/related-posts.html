@@ -1,0 +1,39 @@
+{{/* Related Posts: prioritize same-section articles, then fill from other sections */}}
+{{ $current := . }}
+{{ $sameSection := where (where .Site.RegularPages ".Section" .Section) ".Permalink" "!=" $current.Permalink }}
+{{ $sameSection = sort $sameSection "Date" "desc" }}
+{{ $related := $sameSection | first 3 }}
+
+{{/* If fewer than 3 in section, fill with recent articles from other sections */}}
+{{ if lt (len $related) 3 }}
+  {{ $need := sub 3 (len $related) }}
+  {{ $others := where (where .Site.RegularPages ".Section" "!=" .Section) ".Permalink" "!=" $current.Permalink }}
+  {{ $others = sort $others "Date" "desc" }}
+  {{ $related = $related | append ($others | first $need) }}
+{{ end }}
+
+{{ if gt (len $related) 0 }}
+  <section class="mt-12 pt-8 ukm-rule" aria-label="Related articles">
+    <h2 class="text-xl font-heading font-semibold text-ukm-ink mb-6">Related guides</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      {{ range $related }}
+        <article class="ukm-card flex flex-col ukm-focus group">
+          <a href="{{ .RelPermalink }}" class="block -m-5 p-5 mb-0" tabindex="-1" aria-hidden="true">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              {{ partial "format-badge.html" . }}
+              <span class="text-xs text-ukm-muted">{{ .Date.Format "Jan 2, 2006" }}</span>
+            </div>
+            <h3 class="font-heading font-semibold text-ukm-ink group-hover:text-ukm-authority transition-colors line-clamp-2">{{ .Title }}</h3>
+            <p class="text-sm text-ukm-slate mt-2 line-clamp-2">{{ .Params.description | default (truncate 100 .Plain) }}</p>
+          </a>
+          <div class="mt-auto pt-4">
+            <a href="{{ .RelPermalink }}" class="text-sm font-medium text-ukm-authority hover:text-ukm-crown inline-flex items-center gap-1 ukm-focus">
+              Read guide
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
