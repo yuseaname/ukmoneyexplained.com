@@ -52,7 +52,7 @@ The greatest advantage of a personal loan is predictability. Because the interes
 For many, personal loans are used for significant, planned expenditures, such as home improvements, consolidating existing high-scale debt, or purchasing a vehicle.
 
 ### The Importance of Creditworthiness
-Because personal loans involve larger sums over longer durations, lenders are much more selective. If you have a history of missed payments or struggle to manage credit, securing a traditional personal loan at a competitive rate can be challenging. In such cases, some borrowers look into [bad credit loans in the UK explained](/content/loans/bad-credit-loans-uk-explained) to understand how different lending products accommodate varying credit profiles.
+Because personal loans involve larger sums over longer durations, lenders are much more selective. If you have a history of missed payments or struggle to manage credit, securing a traditional personal loan at a competitive rate can be challenging. In such cases, some borrowers look into [bad credit loans in the UK explained](/bad-credit-loans-uk-explained/) to understand how different lending products accommodate varying credit profiles.
 
 ## Side-by-Side: Payday Loans vs Personal Loans UK
 

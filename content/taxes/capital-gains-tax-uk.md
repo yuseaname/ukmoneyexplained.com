@@ -69,7 +69,7 @@ It is important to note that the UK government has significantly reduced this al
 ### Determining Your Tax Rate
 The rate at which you pay CGT is not fixed; it depends on your total taxable income for the year. To understand your CG/T liability, you must look at your total income, including wages, pensions, and interest. If your income pushes you into a higher tax bracket, your CGT rate may also increase. 
 
-For a detailed breakdown of how your total earnings affect your tax position, you may wish to read our guide on [UK income tax bands explained](/content/taxes/income-tax-bands-uk-explained).
+For a detailed breakdown of how your total earnings affect your tax position, you may wish to read our guide on [UK income tax bands explained](/income-tax-bands-uk-explained/).
 
 #### 1. Rates for Other Assets (Shares, Jewellery, etc.)
 For assets other than residential property, the rates are tied to your Income Tax bands:

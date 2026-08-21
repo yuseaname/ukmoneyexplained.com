@@ -19,7 +19,7 @@ In contrast, a tracker mortgage is linked directly to the Bank of England Base R
 
 Lenders add a margin to the Base Rate for tracker mortgages. For example, if the Base Rate is 5%, a tracker might be 5.5%. This margin can change depending on the lender and your credit score. It is important to read the terms carefully. Some tracker mortgages have a floor rate, which means your rate cannot drop below a certain level, even if the Base Rate falls. This protects the lender but limits your savings.
 
-Both types of mortgages are regulated by the Financial Conduct Authority (FCA) in the UK. This ensures lenders treat customers fairly. However, the rules on how much you can borrow and how much you can repay early differ between the two. Understanding these mechanics helps you plan your finances better. For more on how much you can borrow, see our guide on [affordability checks](/mortgage-affordability/).
+Both types of mortgages are regulated by the Financial Conduct Authority (FCA) in the UK. This ensures lenders treat customers fairly. However, the rules on how much you can borrow and how much you can repay early differ between the two. Understanding these mechanics helps you plan your finances better. For more on how much you can borrow, see our guide on [affordability checks](/mortgage-affordability-calculator-uk/).
 
 Now that we have defined the terms, let us look at how these mortgages function in practice.
 
@@ -39,7 +39,7 @@ Here is a step-by-step breakdown of the process for both types:
 
 Early Repayment Charges are a critical part of how these work. If you pay off a large chunk of your mortgage or sell your home during the fixed term, you may have to pay a penalty. This is usually a percentage of the amount you are paying off. Tracker mortgages often have lower or no ERCs, making them more flexible. However, some trackers do have charges for the first year.
 
-It is also important to understand overpayments. Many fixed rate mortgages allow you to overpay up to 10% of the loan each year without a penalty. Tracker mortgages often allow higher overpayment limits. This can help you pay off the debt faster. You should check the specific terms of your offer. For more details on paying off debt early, read our article on [mortgage overpayments](/mortgage-overpayments/).
+It is also important to understand overpayments. Many fixed rate mortgages allow you to overpay up to 10% of the loan each year without a penalty. Tracker mortgages often allow higher overpayment limits. This can help you pay off the debt faster. You should check the specific terms of your offer. For more details on how different mortgage types work, read our article on [how mortgages work in the UK](/how-mortgages-work-uk/).
 
 The choice often depends on your view of the economy. If you think rates will rise, a fixed rate protects you. If you think rates will fall, a tracker might save money. However, predicting the economy is difficult. Many people choose fixed rates for peace of mind. Others choose trackers for flexibility.
 

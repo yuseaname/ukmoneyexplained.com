@@ -46,9 +46,7 @@ This is one of the most damaging errors. It involves being marked as having "mis
 ### 4. Incorrect Account Balances or Limits
 If a lender reports that your credit card balance is £5,000 when it is actually £500, this incorrectly inflates your credit utilisation ratio. High utilisation is a red flag to lenders and can negatively impact your ability to borrow.
 
-###/content/credit/what-is-a-credit-score-uk/
-
-To understand why these specific errors are so damaging, it is essential to understand the mechanics of your financial standing. You can learn more about the foundations of your financial health by reading our guide on [what is a credit score in the UK](/content/credit/what-is-a-credit-score-uk).
+To understand why these specific errors are so damaging, it is essential to understand the mechanics of your financial standing. You can learn more about the foundations of your financial health by reading our guide on [what is a credit score in the UK](/what-is-a-credit-score-uk/).
 
 ---
 

@@ -43,7 +43,7 @@ Before diving into the "how," it is vital to understand the "what." In the Unite
 
 Each of these agencies maintains its own database of your financial history. They collect information from various sources, including your bank, your mobile phone provider, your utility companies, and the electoral roll. Because they all collect slightly different data points, your "score" might differ depending on which agency you are looking at.
 
-To fully grasp how these numbers are calculated, you may want to read our detailed breakdown of [what is a credit score UK](/content/credit/what-s-a-credit-score-uk) styles.
+To fully grasp how these numbers are calculated, you may want to read our detailed breakdown of [what is a credit score UK](/what-is-a-credit-score-uk/) styles.
 
 When a lender (like a bank) wants to check your reliability, they will request a report from one of these agencies. If they use Experian and your score is high, you are likely to get the loan. However, if they use Equifax and your score is low due to an unupdated address, you might face rejection. This is why it is a best practice to check your data across all three major agencies.
 
@@ -79,7 +79,7 @@ One of the most common points of confusion for UK residents is the difference be
 *   **The Credit Score:** This is a three-digit number (usually) that acts as a shorthand summary of your creditworthiness. It is an easy-to-understand metric that tells you if you are "good" or "bad" in the eyes of the agency.
 *   **The Credit Report:** This is the much larger, much more detailed document. It contains your name, address history, the accounts you hold, your payment history, any defaults, CCJs (County Court Judencies), and even your electoral roll status.
 
-When you use a free service, you are usually seeing a summary (the score) and a simplified version of the report. To truly manage your finances, you must look beyond the number. You need to examine the entries in the report itself. For instance, understanding where your score sits within the wider context is vital; you can learn more about [credit score ranges UK](/content/credit/credit-score-ranges-uk) to see if your number is actually competitive.
+When you use a free service, you are usually seeing a summary (the score) and a simplified version of the report. To truly manage your finances, you must look beyond the number. You need to examine the entries in the report itself. For instance, understanding where your score sits within the wider context is vital; you can learn more about [credit score ranges UK](/credit-score-ranges-uk/) to see if your number is actually competitive.
 
 ## The Difference Between Soft and Hard Searches
 

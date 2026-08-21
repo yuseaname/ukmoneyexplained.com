@@ -113,7 +113,7 @@ Consumers can often lower costs by changing how they use energy. Simple actions 
 ### Where can I find my specific electricity rates?
 Your current rates are listed on your monthly bill or the supplier's online portal. You can also check the Ofgem website for the latest price cap figures. Comparing your rates against the cap helps you understand if you are paying more or less than the regulated maximum.
 
-Understanding these questions helps clarify how the market operates. It empowers consumers to check their own bills against the data provided. For more information on managing household costs, you may find our guide on [understanding your energy bill](/understanding-energy-bills/) useful.
+Understanding these questions helps clarify how the market operates. It empowers consumers to check their own bills against the data provided. For more information on managing household costs, you may find our guide on [cutting your electricity bill](/how-to-reduce-electricity-bill-uk/) useful.
 
 
 

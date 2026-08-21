@@ -113,7 +113,7 @@ Comparison tools rely on your estimated usage. If you provide an estimate that i
 Switching your energy supplier is a powerful way to manage your finances, but it should be part of a broader strategy for energy efficiency. To truly take control of your household budget, you should combine smart switching with active energy management.
 
 ### Monitor Your Baseline
-To know if a new deal is actually saving you money, you need a baseline. Periodically review your usage against your [average electricity bill in the $\text{UK}$](/content/bills/average-electricity-bill-uk). If your usage is creeping up, you may need to look at more efficient appliances or better insulation rather than just a new supplier.
+To know if a new deal is actually saving you money, you need a baseline. Periodically review your usage against your [average electricity bill in the UK](/average-electricity-bill-uk/). If your usage is creeping up, you may need to look at more efficient appliances or better insulation rather than just a new supplier.
 
 ### Implement Small Changes
 *   **LED Lighting:** Replacing old incandescent bulbs with LEDs is one of the simplest ways to reduce unit rate impact.

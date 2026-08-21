@@ -145,7 +145,7 @@ Before applying for any consolidation product:
 - [ ] Confirm you can afford the new monthly payment even if circumstances change
 - [ ] Decide what to do with cleared credit cards (cutting them up is a concrete option)
 
-For help with credit scores before applying, see our guide: [What Affects Your Credit Score in the UK](/credit/what-affects-credit-score-uk).
+For help with credit scores before applying, see our guide: [What Affects Your Credit Score in the UK](/what-affects-credit-score-uk/).
 
 ---
 
