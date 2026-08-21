@@ -110,11 +110,20 @@ Read our [guarantor loans guide](/guarantor-loans-uk-explained/) and [overdrafts
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"Do credit-builder cards really work?" | "Yes. If you spend a small amount each month and pay it off in full, your on-time payment history is reported to all three credit reference agencies. Most people see meaningful improvement within 6-12 months."
-"How much should I spend on a credit-builder card?" | "Spend £10-£50 per month on routine purchases like fuel or groceries. Keep your balance below 30% of your credit limit at all times. Pay the full balance by direct debit every month."
-"What's the best credit-builder card in the UK?" | "Aqua and Capital One Classic are widely recommended for their reasonable limits and credit monitoring tools. Always use an eligibility checker before applying to avoid a hard search that could lower your score."
-"Can I get a credit card with no credit history UK?" | "Yes. Credit-builder cards are designed for people with no credit history. You'll start with a low limit (£150-£500) and high APR, but paying in full every month means the APR doesn't matter."
+{{< faq "Do credit-builder cards really work?" >}}
+Yes. If you spend a small amount each month and pay it off in full, your on-time payment history is reported to all three credit reference agencies. Most people see meaningful improvement within 6-12 months.
+{{< /faq >}}
+
+{{< faq "How much should I spend on a credit-builder card?" >}}
+Spend £10-£50 per month on routine purchases like fuel or groceries. Keep your balance below 30% of your credit limit at all times. Pay the full balance by direct debit every month.
+{{< /faq >}}
+
+{{< faq "What's the best credit-builder card in the UK?" >}}
+Aqua and Capital One Classic are widely recommended for their reasonable limits and credit monitoring tools. Always use an eligibility checker before applying to avoid a hard search that could lower your score.
+{{< /faq >}}
+
+{{< faq "Can I get a credit card with no credit history UK?" >}}
+Yes. Credit-builder cards are designed for people with no credit history. You'll start with a low limit (£150-£500) and high APR, but paying in full every month means the APR doesn't matter.
 {{< /faq >}}
 
 ## Sources and Further Reading

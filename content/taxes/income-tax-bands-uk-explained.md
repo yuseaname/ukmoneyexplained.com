@@ -78,11 +78,20 @@ Combined, a basic-rate employee earning £30,000 pays roughly £3,486 income tax
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What is the income tax personal allowance for 2025/26?" | "The Personal Allowance for 2025/26 is £12,570. This is the amount you can earn tax-free each year. It has been frozen since 2021 and will remain frozen until at least April 2028."
-"How much tax do I pay on £50,000 in the UK?" | "On £50,000, you pay 20% (basic rate) on everything above the £12,570 Personal Allowance, which is £7,486 in income tax. You also pay National Insurance at 8% on earnings between £12,570 and £50,270."
-"What is the higher rate tax threshold?" | "The higher rate (40%) threshold starts at £50,271 for 2025/26 in England, Wales, and Northern Ireland. In Scotland, the 42% higher rate starts at £43,663."
-"What is the additional rate of income tax?" | "The additional rate is 45% on income above £125,140. In Scotland, the equivalent top rate is 48%."
+{{< faq "What is the income tax personal allowance for 2025/26?" >}}
+The Personal Allowance for 2025/26 is £12,570. This is the amount you can earn tax-free each year. It has been frozen since 2021 and will remain frozen until at least April 2028.
+{{< /faq >}}
+
+{{< faq "How much tax do I pay on £50,000 in the UK?" >}}
+On £50,000, you pay 20% (basic rate) on everything above the £12,570 Personal Allowance, which is £7,486 in income tax. You also pay National Insurance at 8% on earnings between £12,570 and £50,270.
+{{< /faq >}}
+
+{{< faq "What is the higher rate tax threshold?" >}}
+The higher rate (40%) threshold starts at £50,271 for 2025/26 in England, Wales, and Northern Ireland. In Scotland, the 42% higher rate starts at £43,663.
+{{< /faq >}}
+
+{{< faq "What is the additional rate of income tax?" >}}
+The additional rate is 45% on income above £125,140. In Scotland, the equivalent top rate is 48%.
 {{< /faq >}}
 
 ## Conclusion

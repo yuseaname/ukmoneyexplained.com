@@ -96,11 +96,20 @@ These are estimates based on consistent good behaviour. Individual results vary.
 
 ## FAQ
 
-{{< faq >}}
-"How fast can I increase my credit score UK?" | "Registering on the electoral roll can boost your score within days. Most improvements take 3–6 months of consistent on-time payments and low credit utilisation."
-"Does checking my own credit score lower it?" | "No. Checking your own score is a 'soft search' and has no impact. Only formal credit applications create 'hard searches' that temporarily lower your score."
-"What is the fastest way to improve a bad credit score?" | "Register to vote, pay all bills on time, reduce credit card balances below 30% of limits, and dispute any errors on your report. These four steps can move the needle fastest."
-"How much will my score drop after a missed payment?" | "A single missed payment can drop your score by 80–100 points. The impact lessens over time, but the record stays on your file for 6 years."
+{{< faq "How fast can I increase my credit score UK?" >}}
+Registering on the electoral roll can boost your score within days. Most improvements take 3–6 months of consistent on-time payments and low credit utilisation.
+{{< /faq >}}
+
+{{< faq "Does checking my own credit score lower it?" >}}
+No. Checking your own score is a 'soft search' and has no impact. Only formal credit applications create 'hard searches' that temporarily lower your score.
+{{< /faq >}}
+
+{{< faq "What is the fastest way to improve a bad credit score?" >}}
+Register to vote, pay all bills on time, reduce credit card balances below 30% of limits, and dispute any errors on your report. These four steps can move the needle fastest.
+{{< /faq >}}
+
+{{< faq "How much will my score drop after a missed payment?" >}}
+A single missed payment can drop your score by 80–100 points. The impact lessens over time, but the record stays on your file for 6 years.
 {{< /faq >}}
 
 ## Conclusion

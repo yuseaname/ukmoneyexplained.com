@@ -105,11 +105,20 @@ A high credit score with a high DTI may still result in rejection — the lender
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What is a good debt-to-income ratio for a UK mortgage?" | "Most UK lenders want your back-end DTI (all debts including housing) below 40-45%. A ratio below 36% gives you the best chance of approval at competitive rates."
-"How is DTI calculated in the UK?" | "Add all monthly debt payments (rent, credit cards, loans, car finance, student loans) and divide by your gross monthly income. Multiply by 100 for a percentage. For example, £1,000 in debts on £3,000 income = 33% DTI."
-"Does student loan count towards DTI?" | "Yes. UK lenders include student loan deductions (typically 9% of earnings above the threshold) in your DTI calculation, even though they're collected through PAYE."
-"Can I get a mortgage with 50% DTI?" | "It's difficult with mainstream lenders, but some specialist lenders may accept higher DTIs at increased interest rates. Improving your DTI before applying will save you thousands in interest."
+{{< faq "What is a good debt-to-income ratio for a UK mortgage?" >}}
+Most UK lenders want your back-end DTI (all debts including housing) below 40-45%. A ratio below 36% gives you the best chance of approval at competitive rates.
+{{< /faq >}}
+
+{{< faq "How is DTI calculated in the UK?" >}}
+Add all monthly debt payments (rent, credit cards, loans, car finance, student loans) and divide by your gross monthly income. Multiply by 100 for a percentage. For example, £1,000 in debts on £3,000 income = 33% DTI.
+{{< /faq >}}
+
+{{< faq "Does student loan count towards DTI?" >}}
+Yes. UK lenders include student loan deductions (typically 9% of earnings above the threshold) in your DTI calculation, even though they're collected through PAYE.
+{{< /faq >}}
+
+{{< faq "Can I get a mortgage with 50% DTI?" >}}
+It's difficult with mainstream lenders, but some specialist lenders may accept higher DTIs at increased interest rates. Improving your DTI before applying will save you thousands in interest.
 {{< /faq >}}
 
 ## Sources and Further Reading

@@ -101,11 +101,20 @@ If you spot an error, contact your employer's payroll department first, then HMR
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What does tax code 1257L mean?" | "1257L is the standard UK tax code for 2025/26. The number 1257 represents your Personal Allowance of £12,570. The letter L means you're entitled to the standard allowance. Most employees should have this code."
-"Why is my first payslip taxed at emergency rate?" | "New employees are often put on an emergency tax code (1257L W1/M1) until HMRC sends your employer the correct code. This is non-cumulative, meaning each pay period is taxed independently. You'll get a refund once your correct code is applied."
-"How do I check if my tax code is correct?" | "Check your tax code at GOV.UK using your Government Gateway ID. Your employer should also give you a P2 Notice of Coding when your tax code changes."
-"What percentage of my salary goes to NI?" | "For 2025/26, employees pay 8% on earnings between £12,570 and £50,270, and 2% on earnings above £50,270. This is separate from income tax."
+{{< faq "What does tax code 1257L mean?" >}}
+1257L is the standard UK tax code for 2025/26. The number 1257 represents your Personal Allowance of £12,570. The letter L means you're entitled to the standard allowance. Most employees should have this code.
+{{< /faq >}}
+
+{{< faq "Why is my first payslip taxed at emergency rate?" >}}
+New employees are often put on an emergency tax code (1257L W1/M1) until HMRC sends your employer the correct code. This is non-cumulative, meaning each pay period is taxed independently. You'll get a refund once your correct code is applied.
+{{< /faq >}}
+
+{{< faq "How do I check if my tax code is correct?" >}}
+Check your tax code at GOV.UK using your Government Gateway ID. Your employer should also give you a P2 Notice of Coding when your tax code changes.
+{{< /faq >}}
+
+{{< faq "What percentage of my salary goes to NI?" >}}
+For 2025/26, employees pay 8% on earnings between £12,570 and £50,270, and 2% on earnings above £50,270. This is separate from income tax.
 {{< /faq >}}
 
 ## Sources and Further Reading

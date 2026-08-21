@@ -1,6 +1,6 @@
 {{- /* faq.html — FAQ item shortcode (collects into page Scratch for faq-schema) */ -}}
 {{- /* Usage: faq "What is X?" — Answer — /faq */ -}}
-{{- $question := .Get 0 -}}
+{{- $question := .Get 0 | default (.Get "question") -}}
 {{- $answer := .Inner | strings.TrimSpace | markdownify -}}
 <div class="my-4 border-l-4 border-blue-400 pl-4">
   <h3 class="font-semibold text-gray-900">{{ $question }}</h3>

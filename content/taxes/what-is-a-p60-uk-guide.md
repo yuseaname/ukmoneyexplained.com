@@ -83,11 +83,20 @@ HMRC's records show the same information as your P60, so you can use them as evi
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"When do I get my P60?" | "Your employer must give you your P60 by 31 May each year. It covers the tax year that ended on 5 April. If you haven't received it by early June, contact your payroll department."
-"Do I need a P60 for a mortgage?" | "Yes, most mortgage lenders ask for your latest P60 as proof of income. If you've lost it, ask your employer for a replacement or use HMRC's personal tax account to download the information."
-"What's the difference between a P60 and a P45?" | "A P60 is an annual summary issued by your current employer at the end of the tax year. A P45 is issued when you leave a job and should be given to your next employer so they use the correct tax code."
-"How long should I keep my P60?" | "Keep your P60 for at least 22 months after the end of the tax year (the HMRC enquiry window). Many people keep them indefinitely as they're useful for pension and tax records."
+{{< faq "When do I get my P60?" >}}
+Your employer must give you your P60 by 31 May each year. It covers the tax year that ended on 5 April. If you haven't received it by early June, contact your payroll department.
+{{< /faq >}}
+
+{{< faq "Do I need a P60 for a mortgage?" >}}
+Yes, most mortgage lenders ask for your latest P60 as proof of income. If you've lost it, ask your employer for a replacement or use HMRC's personal tax account to download the information.
+{{< /faq >}}
+
+{{< faq "What's the difference between a P60 and a P45?" >}}
+A P60 is an annual summary issued by your current employer at the end of the tax year. A P45 is issued when you leave a job and should be given to your next employer so they use the correct tax code.
+{{< /faq >}}
+
+{{< faq "How long should I keep my P60?" >}}
+Keep your P60 for at least 22 months after the end of the tax year (the HMRC enquiry window). Many people keep them indefinitely as they're useful for pension and tax records.
 {{< /faq >}}
 
 ## Sources and Further Reading

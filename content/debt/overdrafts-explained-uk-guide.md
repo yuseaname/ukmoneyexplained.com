@@ -112,11 +112,20 @@ Read our [what is APR guide](/what-is-apr-interest-rate/) to understand how APR 
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"How much does a UK overdraft cost per month?" | "At the typical 39.9% APR, a £500 overdraft costs about £16.63/month in interest. A £1,000 overdraft costs about £33/month. The longer you stay in overdraft, the more it compounds."
-"Can I switch banks with an overdraft?" | "Yes. Use the Current Account Switch Service (CASS). Your new bank will either match your overdraft or offer a lower one. Some banks offer 0% overdrafts to attract switchers. The switch is guaranteed and takes 7 days."
-"Are unarranged overdraft fees banned?" | "Since April 2020, banks cannot charge higher fees for unarranged overdrafts than arranged ones. All overdrafts are charged at a single APR. Fixed daily or monthly fees are also banned."
-"How do I get out of my overdraft permanently?" | "Switch to a 0% overdraft account or use a 0% money transfer card to clear it, then budget to stay out. Ask your bank to reduce your limit gradually so you can't accidentally re-dip. Read our how to get out of debt guide for the full strategy."
+{{< faq "How much does a UK overdraft cost per month?" >}}
+At the typical 39.9% APR, a £500 overdraft costs about £16.63/month in interest. A £1,000 overdraft costs about £33/month. The longer you stay in overdraft, the more it compounds.
+{{< /faq >}}
+
+{{< faq "Can I switch banks with an overdraft?" >}}
+Yes. Use the Current Account Switch Service (CASS). Your new bank will either match your overdraft or offer a lower one. Some banks offer 0% overdrafts to attract switchers. The switch is guaranteed and takes 7 days.
+{{< /faq >}}
+
+{{< faq "Are unarranged overdraft fees banned?" >}}
+Since April 2020, banks cannot charge higher fees for unarranged overdrafts than arranged ones. All overdrafts are charged at a single APR. Fixed daily or monthly fees are also banned.
+{{< /faq >}}
+
+{{< faq "How do I get out of my overdraft permanently?" >}}
+Switch to a 0% overdraft account or use a 0% money transfer card to clear it, then budget to stay out. Ask your bank to reduce your limit gradually so you can't accidentally re-dip. Read our how to get out of debt guide for the full strategy.
 {{< /faq >}}
 
 ## Sources and Further Reading

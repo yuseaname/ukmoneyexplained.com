@@ -88,11 +88,20 @@ Use our [income tax calculator](/income-tax-calculator-uk/) to check what you sh
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What does W1 or M1 mean on my tax code?" | "W1 (Week 1) and M1 (Month 1) mean you're on an emergency tax code. Your tax is calculated for each pay period without considering what you've earned earlier in the tax year, which can cause overpayment. HMRC will usually correct this automatically within 4-8 weeks."
-"How do I get off an emergency tax code?" | "Give your P45 to your new employer, or update your employment details in your GOV.UK personal tax account. HMRC will then issue the correct code to your employer, usually within 4-8 weeks. Any overpaid tax is refunded automatically."
-"Will I get my overpaid tax back?" | "Yes. When your correct tax code is applied, any overpaid tax is refunded through your payslip during the tax year. If the year has ended, HMRC will send a P800 calculation and arrange a refund."
-"What is the emergency tax code for 2025/26?" | "The standard emergency tax code for 2025/26 is 1257L W1 or 1257L M1. The 1257L part gives you the standard £12,570 Personal Allowance, but the W1/M1 suffix means it's calculated non-cumulatively."
+{{< faq "What does W1 or M1 mean on my tax code?" >}}
+W1 (Week 1) and M1 (Month 1) mean you're on an emergency tax code. Your tax is calculated for each pay period without considering what you've earned earlier in the tax year, which can cause overpayment. HMRC will usually correct this automatically within 4-8 weeks.
+{{< /faq >}}
+
+{{< faq "How do I get off an emergency tax code?" >}}
+Give your P45 to your new employer, or update your employment details in your GOV.UK personal tax account. HMRC will then issue the correct code to your employer, usually within 4-8 weeks. Any overpaid tax is refunded automatically.
+{{< /faq >}}
+
+{{< faq "Will I get my overpaid tax back?" >}}
+Yes. When your correct tax code is applied, any overpaid tax is refunded through your payslip during the tax year. If the year has ended, HMRC will send a P800 calculation and arrange a refund.
+{{< /faq >}}
+
+{{< faq "What is the emergency tax code for 2025/26?" >}}
+The standard emergency tax code for 2025/26 is 1257L W1 or 1257L M1. The 1257L part gives you the standard £12,570 Personal Allowance, but the W1/M1 suffix means it's calculated non-cumulatively.
 {{< /faq >}}
 
 ## Sources and Further Reading

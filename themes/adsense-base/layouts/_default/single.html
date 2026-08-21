@@ -77,6 +77,9 @@
   <div class="article-content">
     {{ .Content }}
   </div>
+  {{/* FAQPage JSON-LD emitted here (same render pass, after content = deterministic;
+         the old head.schema Store read raced content rendering — Atlas R8) */}}
+  {{ partial "faq-schema-render.html" . }}
 
   {{/* Tags */}}
   {{ with .Params.tags }}

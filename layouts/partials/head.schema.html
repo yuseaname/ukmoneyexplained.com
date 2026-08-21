@@ -88,25 +88,6 @@
   {{- $schemas = $schemas | append $bc -}}
 {{- end -}}
 
-{{/* ── FAQPage schema (if faq shortcodes were used on this page) ── */}}
-{{- with .Store.Get "faqs" -}}
-  {{- if gt (len .) 0 -}}
-    {{- $faqItems := slice -}}
-    {{- range $i, $faq := . -}}
-      {{- $faqItems = $faqItems | append (dict
-          "@type" "Question"
-          "name" $faq.q
-          "acceptedAnswer" (dict "@type" "Answer" "text" $faq.a)
-      ) -}}
-    {{- end -}}
-    {{- $faqSchema := dict
-        "@context" "https://schema.org"
-        "@type" "FAQPage"
-        "mainEntity" $faqItems
-    -}}
-    {{- $schemas = $schemas | append $faqSchema -}}
-  {{- end -}}
-{{- end -}}
 
 {{/* ── Output combined JSON-LD ── */}}
 {{- if gt (len $schemas) 0 -}}

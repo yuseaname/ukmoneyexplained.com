@@ -39,7 +39,7 @@
       </div>
 
       <div class="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-ukm-ink prose-a:text-ukm-authority prose-a:no-underline hover:prose-a:underline prose-strong:text-ukm-ink">
-        {{ .Content }}
+        {{ .Content }}{{ partial "faq-schema-render.html" . }}
       </div>
 
       <!-- Article footer with review date -->

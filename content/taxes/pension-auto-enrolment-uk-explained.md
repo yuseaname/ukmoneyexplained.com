@@ -115,12 +115,24 @@ You need both for a comfortable retirement. The PLSA (Pensions and Livelihoods S
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What is the minimum pension contribution for auto-enrolment?" | "The minimum total contribution is 8% of qualifying earnings (£6,240-£50,270). You pay 5%, your employer pays 3%, and the government provides tax relief within your 5%."
-"Can I opt out of my workplace pension?" | "Yes, you can opt out at any time. However, you lose your employer contributions (free money) and tax relief. Your employer must re-enrol you every 3 years."
-"At what age does auto-enrolment apply?" | "You are automatically enrolled if you are aged 22 to State Pension age (currently 66) and earn over £10,000 per year."
-"How much tax relief do I get on pension contributions?" | "Basic rate taxpayers get 20% relief: every £80 you contribute becomes £100 in your pension. Higher rate taxpayers get 40% relief."
-"What happens to my workplace pension if I change jobs?" | "Your pension stays invested. You can leave it where it is, transfer it to your new employer's scheme, or combine it with a personal pension. Always compare fees before transferring."
+{{< faq "What is the minimum pension contribution for auto-enrolment?" >}}
+The minimum total contribution is 8% of qualifying earnings (£6,240-£50,270). You pay 5%, your employer pays 3%, and the government provides tax relief within your 5%.
+{{< /faq >}}
+
+{{< faq "Can I opt out of my workplace pension?" >}}
+Yes, you can opt out at any time. However, you lose your employer contributions (free money) and tax relief. Your employer must re-enrol you every 3 years.
+{{< /faq >}}
+
+{{< faq "At what age does auto-enrolment apply?" >}}
+You are automatically enrolled if you are aged 22 to State Pension age (currently 66) and earn over £10,000 per year.
+{{< /faq >}}
+
+{{< faq "How much tax relief do I get on pension contributions?" >}}
+Basic rate taxpayers get 20% relief: every £80 you contribute becomes £100 in your pension. Higher rate taxpayers get 40% relief.
+{{< /faq >}}
+
+{{< faq "What happens to my workplace pension if I change jobs?" >}}
+Your pension stays invested. You can leave it where it is, transfer it to your new employer's scheme, or combine it with a personal pension. Always compare fees before transferring.
 {{< /faq >}}
 
 ## Sources and Further Reading

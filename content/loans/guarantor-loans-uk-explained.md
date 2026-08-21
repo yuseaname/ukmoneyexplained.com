@@ -94,11 +94,20 @@ Read our [bad credit loans guide](/bad-credit-loans-uk-explained/) and [payday l
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What is a guarantor loan?" | "A guarantor loan is a personal loan where a friend or family member agrees to repay if you can't. Typical amounts are £1,000-£15,000 at 30-50% APR. The loan is paid to the guarantor first, who transfers it to the borrower."
-"Is being a guarantor risky?" | "Yes. You're legally responsible for the full loan if the borrower defaults. The loan appears on your credit file, and missed payments damage your credit score. Only agree if you can afford to repay the entire loan yourself."
-"What's better than a guarantor loan?" | "Credit-builder cards (lower APR, builds your own credit), credit union loans (much lower rates, ethical lending), or a budgeting loan if you're on benefits. All are cheaper than guarantor loans."
-"Can I get out of a guarantor loan early?" | "You can repay early with reduced interest (under FCA rules). However, the guarantor cannot unilaterally withdraw — they're committed for the full term unless the loan is repaid."
+{{< faq "What is a guarantor loan?" >}}
+A guarantor loan is a personal loan where a friend or family member agrees to repay if you can't. Typical amounts are £1,000-£15,000 at 30-50% APR. The loan is paid to the guarantor first, who transfers it to the borrower.
+{{< /faq >}}
+
+{{< faq "Is being a guarantor risky?" >}}
+Yes. You're legally responsible for the full loan if the borrower defaults. The loan appears on your credit file, and missed payments damage your credit score. Only agree if you can afford to repay the entire loan yourself.
+{{< /faq >}}
+
+{{< faq "What's better than a guarantor loan?" >}}
+Credit-builder cards (lower APR, builds your own credit), credit union loans (much lower rates, ethical lending), or a budgeting loan if you're on benefits. All are cheaper than guarantor loans.
+{{< /faq >}}
+
+{{< faq "Can I get out of a guarantor loan early?" >}}
+You can repay early with reduced interest (under FCA rules). However, the guarantor cannot unilaterally withdraw — they're committed for the full term unless the loan is repaid.
 {{< /faq >}}
 
 ## Sources and Further Reading

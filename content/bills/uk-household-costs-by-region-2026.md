@@ -74,10 +74,16 @@ Use our [budget planner](/budget-planner-uk/) to see how these savings fit into 
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What is the average UK household energy bill for 2026?" | "Under the Ofgem price cap, a typical dual-fuel household pays approximately £1,500-£1,600 per year for gas and electricity combined. Actual costs vary based on usage, property size, and tariff."
-"Which UK region has the cheapest council tax?" | "London boroughs like Westminster and the City of London have the lowest Band D Council Tax (around £1,000/year), partly offset by high property prices. Northern Ireland's domestic rates system is cheaper still."
-"How much does water cost per year in the UK?" | "The average household pays £400-£520 per year for water and sewerage combined. Costs vary by regional water company. Properties with a water meter often pay less if usage is low."
+{{< faq "What is the average UK household energy bill for 2026?" >}}
+Under the Ofgem price cap, a typical dual-fuel household pays approximately £1,500-£1,600 per year for gas and electricity combined. Actual costs vary based on usage, property size, and tariff.
+{{< /faq >}}
+
+{{< faq "Which UK region has the cheapest council tax?" >}}
+London boroughs like Westminster and the City of London have the lowest Band D Council Tax (around £1,000/year), partly offset by high property prices. Northern Ireland's domestic rates system is cheaper still.
+{{< /faq >}}
+
+{{< faq "How much does water cost per year in the UK?" >}}
+The average household pays £400-£520 per year for water and sewerage combined. Costs vary by regional water company. Properties with a water meter often pay less if usage is low.
 {{< /faq >}}
 
 ## Sources and Further Reading

@@ -162,11 +162,20 @@ Once debt-free, build systems to stay that way:
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What is the fastest way to get out of debt in the UK?" | "The debt avalanche method (paying highest-interest debts first) saves the most money. Focus all surplus income on one debt at a time while paying minimums on others. Balance transfers and debt consolidation can reduce interest costs significantly."
-"Can I get debt written off in the UK?" | "Yes, through a Debt Relief Order (debts under £30,000, low income), an Individual Voluntary Arrangement (partial write-off after 5-6 years), or bankruptcy. Free debt advisors like StepChange can advise which option is right for you."
-"What is Breathing Space?" | "The Debt Respite Scheme (Breathing Space) gives you 60 days of legal protection from creditors, during which interest and charges are frozen. Apply through a debt advisor like StepChange or Citizens Advice."
-"Should I get a debt consolidation loan?" | "Only if the new loan has a lower interest rate than your current debts and you can afford the repayments. Consolidation can simplify payments but doesn't reduce the total owed. Read our debt consolidation guide for a full analysis."
+{{< faq "What is the fastest way to get out of debt in the UK?" >}}
+The debt avalanche method (paying highest-interest debts first) saves the most money. Focus all surplus income on one debt at a time while paying minimums on others. Balance transfers and debt consolidation can reduce interest costs significantly.
+{{< /faq >}}
+
+{{< faq "Can I get debt written off in the UK?" >}}
+Yes, through a Debt Relief Order (debts under £30,000, low income), an Individual Voluntary Arrangement (partial write-off after 5-6 years), or bankruptcy. Free debt advisors like StepChange can advise which option is right for you.
+{{< /faq >}}
+
+{{< faq "What is Breathing Space?" >}}
+The Debt Respite Scheme (Breathing Space) gives you 60 days of legal protection from creditors, during which interest and charges are frozen. Apply through a debt advisor like StepChange or Citizens Advice.
+{{< /faq >}}
+
+{{< faq "Should I get a debt consolidation loan?" >}}
+Only if the new loan has a lower interest rate than your current debts and you can afford the repayments. Consolidation can simplify payments but doesn't reduce the total owed. Read our debt consolidation guide for a full analysis.
 {{< /faq >}}
 
 ## Sources and Further Reading

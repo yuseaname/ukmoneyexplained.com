@@ -110,12 +110,24 @@ Most guides cover the basics, but several lesser-known details matter:
 
 ## FAQ
 
-{{< faq >}}
-"What is National Insurance in the UK?" | "National Insurance is a tax on earnings that funds state benefits including the State Pension, statutory sick pay, and maternity pay. It is deducted automatically from wages (employees) or paid through Self Assessment (self-employed)."
-"How much National Insurance do I pay in 2025/26?" | "For 2025/26, employees pay 8% on earnings between £12,570 and £50,270, and 2% above £50,270. Self-employed individuals pay 6% on profits between £12,570 and £50,270, and 2% above."
-"When did Class 2 National Insurance end?" | "Class 2 NI was abolished from 6 April 2024. Self-employed individuals now pay only Class 4 NI, and their State Pension entitlement is protected through Class 4 contributions alone."
-"How do I check my National Insurance record?" | "You can check your NI record free on GOV.UK using your Government Gateway ID. The record shows your contribution history and any gaps that may affect your State Pension."
-"What is the employer National Insurance rate for 2025/26?" | "Employers pay 15% on all employee earnings above £5,000 per year for 2025/26. The Secondary Threshold was reduced from £9,100 to £5,000 from April 2025."
+{{< faq "What is National Insurance in the UK?" >}}
+National Insurance is a tax on earnings that funds state benefits including the State Pension, statutory sick pay, and maternity pay. It is deducted automatically from wages (employees) or paid through Self Assessment (self-employed).
+{{< /faq >}}
+
+{{< faq "How much National Insurance do I pay in 2025/26?" >}}
+For 2025/26, employees pay 8% on earnings between £12,570 and £50,270, and 2% above £50,270. Self-employed individuals pay 6% on profits between £12,570 and £50,270, and 2% above.
+{{< /faq >}}
+
+{{< faq "When did Class 2 National Insurance end?" >}}
+Class 2 NI was abolished from 6 April 2024. Self-employed individuals now pay only Class 4 NI, and their State Pension entitlement is protected through Class 4 contributions alone.
+{{< /faq >}}
+
+{{< faq "How do I check my National Insurance record?" >}}
+You can check your NI record free on GOV.UK using your Government Gateway ID. The record shows your contribution history and any gaps that may affect your State Pension.
+{{< /faq >}}
+
+{{< faq "What is the employer National Insurance rate for 2025/26?" >}}
+Employers pay 15% on all employee earnings above £5,000 per year for 2025/26. The Secondary Threshold was reduced from £9,100 to £5,000 from April 2025.
 {{< /faq >}}
 
 ## Conclusion

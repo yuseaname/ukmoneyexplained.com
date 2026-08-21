@@ -84,11 +84,20 @@ Read our [budgeting on a low income guide](/how-to-budget-on-a-low-income-uk/) f
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"Can I get Council Tax Reduction if I work?" | "Yes. You don't need to be unemployed to qualify. Each council sets its own income thresholds, but many working households on low incomes get a partial reduction. Apply even if you're unsure — the worst they can say is no."
-"Do I need to apply for Council Tax Reduction separately from Universal Credit?" | "Yes. Universal Credit does not include Council Tax Reduction. You must apply through your local council separately. Being on UC makes you eligible, but you won't get the reduction automatically."
-"How much can Council Tax Reduction save?" | "It varies by council and circumstances. Some low-income households pay zero Council Tax. Others get a 25-80% reduction. Pensioners on Pension Credit often qualify for 100% reduction."
-"Can Council Tax Reduction be backdated?" | "Some councils will backdate your reduction to the date you became eligible, but most only backdate to the date you applied. Apply as early as possible to avoid losing out."
+{{< faq "Can I get Council Tax Reduction if I work?" >}}
+Yes. You don't need to be unemployed to qualify. Each council sets its own income thresholds, but many working households on low incomes get a partial reduction. Apply even if you're unsure — the worst they can say is no.
+{{< /faq >}}
+
+{{< faq "Do I need to apply for Council Tax Reduction separately from Universal Credit?" >}}
+Yes. Universal Credit does not include Council Tax Reduction. You must apply through your local council separately. Being on UC makes you eligible, but you won't get the reduction automatically.
+{{< /faq >}}
+
+{{< faq "How much can Council Tax Reduction save?" >}}
+It varies by council and circumstances. Some low-income households pay zero Council Tax. Others get a 25-80% reduction. Pensioners on Pension Credit often qualify for 100% reduction.
+{{< /faq >}}
+
+{{< faq "Can Council Tax Reduction be backdated?" >}}
+Some councils will backdate your reduction to the date you became eligible, but most only backdate to the date you applied. Apply as early as possible to avoid losing out.
 {{< /faq >}}
 
 ## Sources and Further Reading

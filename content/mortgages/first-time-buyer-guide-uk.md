@@ -113,11 +113,20 @@ Scotland uses Land and Buildings Transaction Tax (LBTT) and Wales uses Land Tran
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"How much deposit do I need as a first-time buyer?" | "Most lenders require a minimum 5% deposit, but 10-15% gives you access to better mortgage rates. For a £290,000 home, that's £14,500 (5%) to £43,500 (15%)."
-"Can I get a mortgage with bad credit as a first-time buyer?" | "Yes, but your options will be limited and rates higher. Specialist bad credit mortgages exist. Improving your score first will save you thousands. See our bad credit loans guide for context."
-"What government help is available for first-time buyers?" | "Schemes include First Homes (30-50% discount), Shared Ownership (buy a share), and the Lifetime ISA (25% government bonus up to £1,000/year). Eligibility varies by scheme."
-"How long does it take to buy a first home?" | "From offer acceptance to getting keys typically takes 8-12 weeks. The full process (saving deposit, finding a property, mortgage approval) usually takes 6-18 months."
+{{< faq "How much deposit do I need as a first-time buyer?" >}}
+Most lenders require a minimum 5% deposit, but 10-15% gives you access to better mortgage rates. For a £290,000 home, that's £14,500 (5%) to £43,500 (15%).
+{{< /faq >}}
+
+{{< faq "Can I get a mortgage with bad credit as a first-time buyer?" >}}
+Yes, but your options will be limited and rates higher. Specialist bad credit mortgages exist. Improving your score first will save you thousands. See our bad credit loans guide for context.
+{{< /faq >}}
+
+{{< faq "What government help is available for first-time buyers?" >}}
+Schemes include First Homes (30-50% discount), Shared Ownership (buy a share), and the Lifetime ISA (25% government bonus up to £1,000/year). Eligibility varies by scheme.
+{{< /faq >}}
+
+{{< faq "How long does it take to buy a first home?" >}}
+From offer acceptance to getting keys typically takes 8-12 weeks. The full process (saving deposit, finding a property, mortgage approval) usually takes 6-18 months.
 {{< /faq >}}
 
 ## Sources and Further Reading

@@ -108,11 +108,20 @@ Always check the current base rate at [Bank of England](https://www.bankofenglan
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What is the best savings account rate in the UK right now?" | "The best rates change weekly. As of early 2026, easy-access accounts pay around 4.5-5.5%, while regular savers can pay up to 7%. Check MoneySavingExpert or Moneyfacts for the latest best buys."
-"How much can I save tax-free in the UK?" | "Basic-rate taxpayers can earn £1,000 in savings interest tax-free (Personal Savings Allowance). Higher-rate taxpayers get £500. Additional-rate taxpayers get £0. A Cash ISA provides tax-free interest regardless of your tax band."
-"Should I get a Cash ISA or a regular savings account?" | "If your savings interest exceeds your Personal Savings Allowance (£1,000 for basic rate, £500 for higher rate), a Cash ISA saves you tax. If your interest is below the allowance, choose whichever account has the better rate."
-"What is the Lifetime ISA bonus?" | "The government adds a 25% bonus to Lifetime ISA contributions, up to £4,000 per year. That's up to £1,000 free per year. The money must be used for a first home (up to £450,000) or retirement (from age 60)."
+{{< faq "What is the best savings account rate in the UK right now?" >}}
+The best rates change weekly. As of early 2026, easy-access accounts pay around 4.5-5.5%, while regular savers can pay up to 7%. Check MoneySavingExpert or Moneyfacts for the latest best buys.
+{{< /faq >}}
+
+{{< faq "How much can I save tax-free in the UK?" >}}
+Basic-rate taxpayers can earn £1,000 in savings interest tax-free (Personal Savings Allowance). Higher-rate taxpayers get £500. Additional-rate taxpayers get £0. A Cash ISA provides tax-free interest regardless of your tax band.
+{{< /faq >}}
+
+{{< faq "Should I get a Cash ISA or a regular savings account?" >}}
+If your savings interest exceeds your Personal Savings Allowance (£1,000 for basic rate, £500 for higher rate), a Cash ISA saves you tax. If your interest is below the allowance, choose whichever account has the better rate.
+{{< /faq >}}
+
+{{< faq "What is the Lifetime ISA bonus?" >}}
+The government adds a 25% bonus to Lifetime ISA contributions, up to £4,000 per year. That's up to £1,000 free per year. The money must be used for a first home (up to £450,000) or retirement (from age 60).
 {{< /faq >}}
 
 ## Sources and Further Reading

@@ -109,10 +109,16 @@ Read our [income tax bands guide](/income-tax-bands-uk-explained/) for strategie
 
 ## Frequently Asked Questions
 
-{{< faq >}}
-"What is the average tax rate in the UK?" | "For a median UK salary of approximately £35,000, the total effective tax rate including income tax, NI, VAT, and council tax is approximately 34%. Without VAT and council tax, the direct deduction rate is about 21%."
-"What salary puts you in the 60% tax bracket?" | "Between £100,000 and £125,140, the loss of the £12,570 Personal Allowance creates an effective 60% marginal rate. You keep only 40p of every additional £1 earned in this range."
-"How much tax does someone earning £50,000 pay?" | "On £50,000, you pay approximately £7,486 income tax and £2,994 NI, for a total of £10,480 in direct deductions (21% effective rate). Adding estimated VAT and council tax brings the real total to about £17,800 (35.7%)."
+{{< faq "What is the average tax rate in the UK?" >}}
+For a median UK salary of approximately £35,000, the total effective tax rate including income tax, NI, VAT, and council tax is approximately 34%. Without VAT and council tax, the direct deduction rate is about 21%.
+{{< /faq >}}
+
+{{< faq "What salary puts you in the 60% tax bracket?" >}}
+Between £100,000 and £125,140, the loss of the £12,570 Personal Allowance creates an effective 60% marginal rate. You keep only 40p of every additional £1 earned in this range.
+{{< /faq >}}
+
+{{< faq "How much tax does someone earning £50,000 pay?" >}}
+On £50,000, you pay approximately £7,486 income tax and £2,994 NI, for a total of £10,480 in direct deductions (21% effective rate). Adding estimated VAT and council tax brings the real total to about £17,800 (35.7%).
 {{< /faq >}}
 
 ## Sources and Further Reading
